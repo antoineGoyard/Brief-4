@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/index.css">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+</head>
+
+<body>
+  <div id="title_game_player" class="title_game"> Placement de vos Bateaux</div>
+  <div id="title_game" class="title_game hidden"> A vous de Jouer</div>
+  <div id="title_game_ia" class="title_game hidden"> A l'ordinateur de jouer</div>
+
+
+  <div id="nomovegame" class="hidden"></div>
+
+  <div class="placementGame" id="placementGeneral">
+    <div id="game_board_main">
+    </div>
+    <div id="game_board_main2">
+    </div>
+  </div>
+  <div id="game_board_ia">
+  </div>
+
+  <button id="btn_btn1" class="fullbtn">Validation du Placement </button>
+
+  <div id="explicationGame" class="explication">
+
+   <iframe width="550" height="320" src="https://www.youtube.com/embed/1t-93e_7wOo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div> 
+  <div id="bateauplacer" class="passagevertical">
+
+
+    <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1"
+        src="./img/vaisseau1Bleu.png"></span>
+
+    <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2"
+        src="./img/vaisseau1Rouge.png"></span>
+
+
+    <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3"
+        src="./img/vaisseau1Bleu.png"></span>
+
+    <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4"
+        src="./img/vaisseau1Rouge.png"></span>
+
+    <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5"
+        src="./img/vaisseau1Bleu.png"></span>
+
+  </div>
+  <button id="btn_btn2" class="fullbtn">Tourner vos Bateaux ?</button>
+
+
+
+
+  <script src="js/test.js"></script>
+
+
+</body>
+
+</html>
