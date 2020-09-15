@@ -61,7 +61,10 @@
                 </div>
                 <div class="labelCheckbox">
                     <input type="checkbox" id="difficult" name="difficult"><label for="Difficile">Difficile</label>
-                </div>   
+                </div> 
+                <div class="labelCheckbox">
+                    <input type="checkbox" id="doom" name="doom"><label for="Doom">Doom</label>
+                </div>     
             </div>
             <h2 class="titreVert">Choisir l'équipe:</h2>
             <div class="checkbox">
@@ -174,15 +177,15 @@
         <h1>Options</h1>
         <label class="labelOptions">Musique</label>
             <div class="btnOptionsBar">
-            <button class="btnOptions">On</button>
-            <button class="btnOptions">Off</button>
+            <button id="musicOn" class="btnOptions">On</button>
+            <button id="musicOff" class="btnOptions">Off</button>
             </div>
         <label class="labelOptions">Son</label>
             <div class="btnOptionsBar">
         <button class="btnOptions">On</button>
         <button class="btnOptions">Off</button>
-            </div>   
-        <button class="btn">Fullscreen</button>
+            </div>
+        <button class="btn" id='fullscreen'>Fullscreen</button>
         <button id="btnMenu" class="btn">Menu</button>
     </div>  
 </section>
@@ -192,5 +195,6 @@
 
 <script type="text/javascript" src="js/menu.js"></script>
 <script type="text/javascript" src="js/icone.js"></script>
+<script type="text/javascript" src="js/options.js"></script>
 </body>
 </html>
