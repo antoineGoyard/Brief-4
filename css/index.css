@@ -136,7 +136,7 @@ table
 {
     width: 50%;
     height: 50%;
-    margin-left: 15vh;
+    margin-left: 10vh;
     margin-top: 55vh;
     
     
@@ -254,25 +254,55 @@ table
     height: 35vh;
     margin-top: -40px;
 }
+#boat-1.passagesmallboat-1
+{
+    width: 3.5vh;
+    height: 17.5vh;
+    margin-top: -20px;
+}
 #boat-2{
     width: 7vh;
     height: 28vh;
     margin-top: -40px;
+}
+#boat-2.passagesmallboat-2{
+    width: 2.5vh;
+    height: 14vh;
+    margin-top: -20px;
+    
 }
 #boat-3{
     width: 7vh;
     height: 21vh;
     margin-top: -40px;
 }
+#boat-3.passagesmallboat-3{
+    width: 3.5vh;
+    height: 10.5vh;
+    margin-top: -20px;
+    
+}
 #boat-4{
     width: 7vh;
     height: 21vh;
     margin-top: -40px;
 }
+#boat-4.passagesmallboat-4{
+    width: 3.5vh;
+    height: 10.5vh;
+    margin-top: -20px;
+    
+}
 #boat-5{
     width: 7vh;
     height: 14vh;
     margin-top: -40px;
+}
+#boat-5.passagesmallboat-5{
+    width: 2.5vh;
+    height: 7vh;
+    margin-top: -20px;
+    
 }
 
 #boat-1.draggable.boatturn{
@@ -281,17 +311,41 @@ table
     margin-top: -30px;
     margin-left: -40px;
 }
+#boat-1.draggable.boatturn.ElementPlacer.passagesmallboat-1
+{
+    height: 3.5vh;
+    width: 17.5vh;
+    margin-top: -15px;
+    margin-left: -20px;
+
+}
 #boat-2.draggable.boatturn{
     height: 7vh;
     width: 28vh;
     margin-top: -30px;
     margin-left: -40px;
 }
+#boat-2.draggable.boatturn.ElementPlacer.passagesmallboat-2
+{
+    height: 3.5vh;
+    width: 14vh;
+    margin-top: -15px;
+    margin-left: -20px;
+
+}
 #boat-3.draggable.boatturn{
     height: 7vh;
-    width: 28vh;
+    width: 21vh;
     margin-top: -30px;
     margin-left: -40px;
+}
+#boat-3.draggable.boatturn.ElementPlacer.passagesmallboat-3
+{
+    height: 3.5vh;
+    width: 10.5vh;
+    margin-top: -15px;
+    margin-left: -20px;
+
 }
 #boat-4.draggable.boatturn{
     height: 7vh;
@@ -299,11 +353,27 @@ table
     margin-top: -30px;
     margin-left: -40px;
 }
+#boat-4.draggable.boatturn.ElementPlacer.passagesmallboat-4
+{
+    height: 3.5vh;
+    width: 10.5vh;
+    margin-top: -15px;
+    margin-left: -20px;
+
+}
 #boat-5.draggable.boatturn{
     height: 7vh;
     width: 14vh;
     margin-top: -30px;
     margin-left: -40px;
+}
+#boat-5.draggable.boatturn.ElementPlacer.passagesmallboat-5
+{
+    height: 3.5vh;
+    width: 7vh;
+    margin-top: -15px;
+    margin-left: -20px;
+
 }
 .fullbtn
 {
@@ -318,19 +388,19 @@ table
 {
     position: absolute;
     margin-top: 85vh;
-    margin-left: 17vw;
+    margin-left: 12vw;
 }
 #btn_btn2
 {
    position: absolute;
    
-   margin-left: -30vw;
+   margin-left: -35vw;
    margin-top: -20vh;
 
 }
 .placementGame
 {
-    margin-left: 55%;
+    margin-left: 50%;
     
 }
 .placementGame2
@@ -340,8 +410,8 @@ table
 }
 #game_board_ia
 {
-    margin-left: 55%;
-    margin-top:2.5%
+    margin-left: 50vw;
+    margin-top:2.5vh;
 }
 #explicationGame
 {
@@ -355,10 +425,47 @@ table
     line-height: 3vh;
     size: 2vh;
 }
-#funfact
+
+video
 {
-    width: 70vh;
+    width: 40vw;
     height: 40vh;
+    
+}
+#letableau.changementplace
+{
+    width: 40vh;
+    height: 40vh;
+}
+#letableauvisible.changementplace
+{
+     width: 40vh;
+    height: 40vh;
+    
+}
+#titre_placement
+{
+    position: absolute;
+    margin-left: 8.5vw;
+    margin-top: 3vh;
+
+}
+#score
+{
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 20vw;
+    background-color: #3C383855;
+    border: solid 1px white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.hit{
+    background-color: red;
+}
+.miss
+{
+    background-color: blue;
 }
 /*
 table {
