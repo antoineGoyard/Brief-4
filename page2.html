@@ -16,14 +16,12 @@
     <div id="container">
 <!----------------------------------gestion du son------------------------------------------->
 <!------------------------------------------------------------------------------------------->
-
-<div class="sound" id="play">
+<audio id="audioAccueil" src="audio/space-battle.mp3" autoplay></audio>
+<button class="sound" id="play">
     <i class="fas fa-volume-up"></i>
-        <!-- <img  class="imgsound" src="img/sound.png" alt="mute"> -->
-        </div>
-<div class="hidden" id="muted"><i class="fas fa-volume-mute"></i>
-        <!-- <img  class="imgsoung hidden" src="img/mute.png" alt="btnmute"> -->
-        </div>
+</button>
+<button class="hidden" id="muted"><i class="fas fa-volume-mute"></i></button>
+       
 <!------------------------------Récupération du pseudo--------------------------------------->
 <section id="sectionInscription">
     <div class="containerInscription">
@@ -192,6 +190,7 @@
 <!------------------------------------------------------------------------------------------->
 </div>
 
-<script src="js/menu.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/icone.js"></script>
 </body>
 </html>
