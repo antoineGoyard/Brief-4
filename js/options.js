@@ -31,7 +31,9 @@ var fullscreen = document.getElementById('fullscreen');
 fullscreen.addEventListener('click',()=>{
     openFullscreen();
 })
-
+/**
+ * Music and sound management
+ */
 var musicOn = document.getElementById('musicOn');
 var musicOff = document.getElementById('musicOff');
 var soundOn = document.getElementById('soundOn');
