@@ -14,7 +14,7 @@ soundOff.addEventListener('click',()=>{
 });
 
 // setTimeout(function(){
-//   document.getElementById('modale').classList.add('hidden')  
+
 // }, 2000);
 // Function Set Time out //
 
