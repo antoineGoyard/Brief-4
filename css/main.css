@@ -58,7 +58,7 @@ label {
     background-color:  #000000;
     border :1px solid black;
     top: 5px;
-    left: 5px;
+    left: 1%;
     color: #FFFFFF;
     font-size: 30px;
 }
@@ -66,14 +66,14 @@ label {
 /*-----------------------------------------------------------------------------------------------*/
 .btn {
     width: 50%;  
-    height: 12%;
+    height: 10%;
     margin: 0 auto;
     color: #FFFFFF;
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
 }
-.btn:hover,.btnGame:hover,#submit:hover,.btnBtnBar:hover {
-    box-shadow: -4px 4px 0 grey;
+.btn:hover,.btnGame:hover,.btnBtnBar:hover,.return:hover {
+    box-shadow: -3px 3px 0 rgb(71, 71, 71);
 }
 .btnGame {
     width: 30%;
@@ -84,11 +84,12 @@ label {
     font-family: 'Press Start 2P', cursive;
 }
 .btnBtnBar {
-    padding: 20px 0 20px 0;
+    
     color: #FFFFFF;
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
     width: 15%;
+    height: 10%;
     margin: 0 auto;
 }
 .btnBar {
@@ -97,6 +98,16 @@ label {
     justify-content: space-evenly;
     margin-top: 10%;
     
+}
+.return {
+    width: 6%;
+    height: 5%;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-left: 1%;;
 }
 /*--------------------------------------------inscription----------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
@@ -168,8 +179,9 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 120px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
+
 /*---------------------------------------------menu solo-----------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 .containerSolo {
@@ -195,8 +207,8 @@ label {
     margin: 0 auto;
 }
 .labelCheckbox {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    align-content: center;
 
 }
 .checkboxEquipe {
@@ -211,7 +223,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height:100vh;
+    height:80%;
 }
 .containerDuo {
     display: flex;
@@ -280,6 +292,7 @@ label {
    display: flex;
    flex-direction: row;
    justify-content: center;
+   height: 8%;
 }
 /*-------------------------------------------------multi-joueurs--------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/

@@ -30,13 +30,16 @@ let sectionPseudo = document.getElementById('sectionInscription')
 let sectionMenu = document.getElementById('sectionMenu');
 let sectionSolo = document.getElementById('sectionMenuSolo');
 let sectionDuo = document.getElementById('sectionMenuDuo');
-let sectionMulti = document.getElementById('');
+//let sectionMulti = document.getElementById('');
 let sectionScore = document.getElementById('sectionScore');
 let sectionOption = document.getElementById('sectionOptions');
 let btnMuted = document.getElementById('muted');
 let btnPlay = document.getElementById('play');
+let btnReturnMenu = document.getElementById('returnMenu');
+let btnDuoReturnMenu = document.getElementById('duoReturnMenu');
+let btnScoreReturnMenu = document.getElementById('scoreReturnMenu');
 
-// Au click sure la page on cherche l'id de l'element.
+// Au click sur la page on cherche l'id de l'element.
 
 
 addEventListener('click', (event) =>
@@ -53,6 +56,7 @@ addEventListener('click', (event) =>
     {
         sectionDuo.classList.remove('hidden')
         sectionMenu.classList.add('hidden');
+        sectionSolo.classList.add('hidden');
         console.log('Click Btn Duo');
     }
     // Bouton Vers Multi
@@ -103,4 +107,30 @@ addEventListener('click', (event) =>
     }
 })
 
-
+ btnReturnMenu.addEventListener('click',()=>{
+    sectionMenu.classList.remove('hidden');
+    sectionDuo.classList.add('hidden');
+    sectionOption.classList.add('hidden');
+    sectionScore.classList.add('hidden');
+    sectionPseudo.classList.add('hidden')
+    //sectionMulti.classList.add('hidden');
+    console.log('Click Btn Option');
+ })
+ btnDuoReturnMenu.addEventListener('click',()=>{
+    sectionMenu.classList.remove('hidden');
+    sectionDuo.classList.add('hidden');
+    sectionOption.classList.add('hidden');
+    sectionScore.classList.add('hidden');
+    sectionPseudo.classList.add('hidden')
+    //sectionMulti.classList.add('hidden');
+    console.log('Click Btn Option');
+ })
+ btnScoreReturnMenu.addEventListener('click',()=>{
+    sectionMenu.classList.remove('hidden');
+    sectionDuo.classList.add('hidden');
+    sectionOption.classList.add('hidden');
+    sectionScore.classList.add('hidden');
+    sectionPseudo.classList.add('hidden')
+    //sectionMulti.classList.add('hidden');
+    console.log('Click Btn Option');
+ })

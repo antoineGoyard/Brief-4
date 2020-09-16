@@ -34,10 +34,25 @@ fullscreen.addEventListener('click',()=>{
 
 var musicOn = document.getElementById('musicOn');
 var musicOff = document.getElementById('musicOff');
+var soundOn = document.getElementById('soundOn');
+var soundOff = document.getElementById('soundOff');
+
 
 musicOn.addEventListener('click',()=>{
-    playerAudio.play();
+    playerAudio.muted = false;
+    iconeMute.classList.add('hidden');
+    iconeSon.classList.remove('hidden');
+    iconeSon.classList.add('sound');
 })
-musicOn.addEventListener('click',()=>{
+musicOff.addEventListener('click',()=>{
     playerAudio.muted = true;
+    iconeSon.classList.add('hidden');
+    iconeMute.classList.remove('hidden');
+    iconeMute.classList.add('sound');
 })
+/* soundOn.addEventListener('click',()=>{
+  playerAudio.muted = false;
+})
+soundOff.addEventListener('click',()=>{
+  playerAudio.muted = true;
+}) */
