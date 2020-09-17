@@ -1,21 +1,3 @@
-
-
-//////////////// Function skip video /////////////////
-
-// Function Set Time out //
-
-// Quand le vidéo fini , JS Clique automatiquement sure le bouton SKIP.
-
-/*function timeOutVideo()
-{
-    document.getElementById('IDBOUTONSKIP').click();
-}
-
-window.setTimeout(timeOutVideo(), DUREEVIDEO);*/
-
-// Clique bouton a faire en html //
-
-
 //////////////// Function bouton du menu /////////////////
 // Variable des boutons
 
@@ -38,6 +20,8 @@ let btnPlay = document.getElementById('play');
 let btnReturnMenu = document.getElementById('returnMenu');
 let btnDuoReturnMenu = document.getElementById('duoReturnMenu');
 let btnScoreReturnMenu = document.getElementById('scoreReturnMenu');
+let btnJouerSolo = document.getElementById('btnJouerSolo');
+let btnJouerDuo = document.getElementById('btnJouerDuo')
 
 // Au click sur la page on cherche l'id de l'element.
 
@@ -134,3 +118,9 @@ addEventListener('click', (event) =>
     //sectionMulti.classList.add('hidden');
     console.log('Click Btn Option');
  })
+ btnJouerSolo.addEventListener('click',()=>{
+     window.location = "solo.html";
+ })
+ btnJouerDuo.addEventListener('click',()=>{
+    window.location = "duo.html";
+})

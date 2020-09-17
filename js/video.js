@@ -13,7 +13,11 @@ soundOff.addEventListener('click',()=>{
     document.getElementById('modale').classList.add('hidden');
 });
 
-setTimeout(function(){ 
+
+
+if (player.play){
+    setTimeout(function(){
     console.log("Hello");
     document.getElementById('btnSkip').click();
 }, 30000);
+};
