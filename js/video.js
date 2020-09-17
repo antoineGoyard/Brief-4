@@ -13,16 +13,7 @@ soundOff.addEventListener('click',()=>{
     document.getElementById('modale').classList.add('hidden');
 });
 
-// setTimeout(function(){
-
-// }, 2000);
-// Function Set Time out //
-
-// Quand le vidéo fini , JS Clique automatiquement sure le bouton SKIP.
-
-// function timeOutVideo()
-// {
-//     document.getElementById('btnSkip').click();
-// }
-
-// window.setTimeout(timeOutVideo(), 150000);
+setTimeout(function(){ 
+    console.log("Hello");
+    document.getElementById('btnSkip').click();
+}, 30000);
