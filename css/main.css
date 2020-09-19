@@ -10,7 +10,6 @@ body{
     overflow: hidden;
 }
 section {
-    
     color: #FFFFFF;
     font-family: 'Press Start 2P';
     height: 100vh;
@@ -179,7 +178,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 80px auto 0 auto;
+    margin: 0 auto;
 }
 
 /*---------------------------------------------menu solo-----------------------------------------*/

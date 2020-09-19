@@ -72,9 +72,13 @@ addEventListener('click', (event) =>
         sectionScore.classList.add('hidden');
         sectionPseudo.classList.add('hidden')
         //sectionMulti.classList.add('hidden');
-        console.log('Click Btn Option');
+        console.log('Click Btn Menu');
     }
-    else if( event.target.id == "btnPlay")
+    // Si il y a un clique ailleur que sure un bouton
+    
+
+    // gestion icone son
+    if( event.target.id == "btnPlay")
     {
         btnPlay.classList.add('hidden')
         dbtnMuted.classList.remove('hidden')
@@ -84,21 +88,17 @@ addEventListener('click', (event) =>
         btnPlay.classList.remove('hidden')
         dbtnMuted.classList.add('hidden')
     }
-    // Si il y a un clique ailleur que sure un bouton
-    else
-    {
-        console.log('Pas sure un bouton');
-    }
 })
-
+    //bouton retour menu
  btnReturnMenu.addEventListener('click',()=>{
     sectionMenu.classList.remove('hidden');
+    sectionSolo.classList.add('hidden')
     sectionDuo.classList.add('hidden');
     sectionOption.classList.add('hidden');
     sectionScore.classList.add('hidden');
     sectionPseudo.classList.add('hidden')
     //sectionMulti.classList.add('hidden');
-    console.log('Click Btn Option');
+    console.log('Click Btn retour menu');
  })
  btnDuoReturnMenu.addEventListener('click',()=>{
     sectionMenu.classList.remove('hidden');
@@ -107,7 +107,7 @@ addEventListener('click', (event) =>
     sectionScore.classList.add('hidden');
     sectionPseudo.classList.add('hidden')
     //sectionMulti.classList.add('hidden');
-    console.log('Click Btn Option');
+    console.log('Click Btn retour menu');
  })
  btnScoreReturnMenu.addEventListener('click',()=>{
     sectionMenu.classList.remove('hidden');
@@ -116,8 +116,9 @@ addEventListener('click', (event) =>
     sectionScore.classList.add('hidden');
     sectionPseudo.classList.add('hidden')
     //sectionMulti.classList.add('hidden');
-    console.log('Click Btn Option');
+    console.log('Click Btn retour menu');
  })
+    //boutons redirections
  btnJouerSolo.addEventListener('click',()=>{
      window.location = "solo.html";
  })

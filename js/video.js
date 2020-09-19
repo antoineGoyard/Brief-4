@@ -6,6 +6,7 @@ let soundOff = document.getElementById('soundOff');
 soundOn.addEventListener('click',()=>{
     player.play()
     document.getElementById('modale').classList.add('hidden');
+
 });
 soundOff.addEventListener('click',()=>{
     player.play();
@@ -13,11 +14,7 @@ soundOff.addEventListener('click',()=>{
     document.getElementById('modale').classList.add('hidden');
 });
 
-
-
-if (player.play){
-    setTimeout(function(){
+setTimeout(function(){
     console.log("Hello");
     document.getElementById('btnSkip').click();
-}, 30000);
-};
+}, 6000);
