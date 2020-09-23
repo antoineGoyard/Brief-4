@@ -9,145 +9,245 @@
 
 
 
-const box  = 100;// nombre de case
-let already= [0,3,4,5,12,80,91];// coup déjà joué 
-let bat1= [6,2];//bateau de test
-let bat2= [4,5];//bateau de test
-let bats=[bat1,bat2]; // coordonné des bateau du joueur
-let coup; // cette variable est le coup joué par l'ia quand c'est aléatoire 
+//coup --> cette variable est le coup joué par l'ia quand c'est aléatoire 
 let test = true; // si true le dernier coup a touché a touché si false ce coup était raté
 let prochainCoup =0;// Si le dernier coup a toucher cette variable sera le prochain coup a faire pour l'IA
 let x = 2; //niveau de difficulté qui permet de savoir la taille du tableau contenant les bateaux
+let already = [];
 
 /**
  * fonction qui permet a l'IA de jouer un coup aléatoire, de plus elle vérifie si le coup n'a pas déja été joué 
  */
-function iaAction()
+function actionAi(already)
 {
-    coup = Math.floor(Math.random() * 8);
-    let verif = already.length;
-    for (let i = 0; i < verif; i++) 
+    coup = Math.floor(Math.random() * 100);
+    //let verif = already.length;
+    
+    for (let i = 0; i < already.length; i++) 
     {
+
         if (coup == already[i]) 
         {
-            coup = iaAction();
+            coup = actionAi(already);
             break;
         }
     }
     return coup;
 }
 
-/**
- * cette fonction vérifie si l'IA Touche les bateaux du joueur
- * Elle verifie le tableau de bateau du joueur 
- */
-function touche()
+
+
+
+function findNext()
 {
-    for (let i = 0; i < x; i++)
-     {
-        for(let j = 0; j< bats[i].length;j++)
+    let ite = 0;
+        for (let i = 0; i < alreadyHitAi.length; i++) 
         {
-            if (coup == bats[i][j] ) 
+            if ((touchAi[touchAi.length-1] == 9)||(touchAi[touchAi.length-1] == 19)||(touchAi[touchAi.length-1] == 29)||(touchAi[touchAi.length-1] == 39)||(touchAi[touchAi.length-1] == 49)||(touchAi[touchAi.length-1] == 59)||(touchAi[touchAi.length-1] == 69)||(touchAi[touchAi.length-1] == 79)||(touchAi[touchAi.length-1] == 89)||(touchAi[touchAi.length-1] == 99))
             {
-                return console.log("touché");
+                break;
+            }
+            if((touchAi[touchAi.length-1] +1 ) == alreadyHitAi[i])
+            {
+                break;
+            }
+            ite++;
+        }
+        if(ite== alreadyHitAi.length)
+        {
+            if(verifBoat((touchAi[touchAi.length-1] +1 ),boatPlayer) == true )
+            {
+                alreadyHitAi.push(touchAi[touchAi.length-1] +1);
+                touchAi.push(touchAi[touchAi.length-1] +1);
+                document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
+                return;
+            }else
+            {
+                alreadyHitAi.push(touchAi[touchAi.length-1]+1);
+                console.log(touchAi[touchAi.length-1]+1);
+                document.getElementById(alreadyHitAi[alreadyHitAi.length-1]).classList.add("miss");
+                return;
             }
         }
-    }
-    return console.log(" a cotech");
+        ite = 0;
+        for (let i = 0; i < alreadyHitAi.length; i++) 
+        {
+            if ((touchAi[touchAi.length-1] == 0)||(touchAi[touchAi.length-1] == 10)||(touchAi[touchAi.length-1] == 20)||(touchAi[touchAi.length-1] == 30)||(touchAi[touchAi.length-1] == 40)||(touchAi[touchAi.length-1] == 50)||(touchAi[touchAi.length-1] == 60)||(touchAi[touchAi.length-1] == 70)||(touchAi[touchAi.length-1] == 80)||(touchAi[touchAi.length-1] == 90))
+            {
+                break;
+            }
+            if((touchAi[touchAi.length-1] -1 ) == alreadyHitAi[i])
+            {
+                break;
+            }
+            ite++;
+        }
+        if(ite == alreadyHitAi.length)
+            {
+                if(verifBoat((touchAi[touchAi.length-1] -1 ),boatPlayer) == true )
+                {
+                    alreadyHitAi.push(touchAi[touchAi.length-1] -1);
+                    touchAi.push(touchAi[touchAi.length-1] -1);
+                    document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
+                    return;
+                }else
+                {
+                    alreadyHitAi.push(touchAi[touchAi.length-1]-1);
+                    console.log(touchAi[touchAi.length-1]-1);
+                    document.getElementById(alreadyHitAi[alreadyHitAi.length-1]).classList.add("miss");
+                    return;
+                }
+            }
+        ite=0;
+        for (let i = 0; i < alreadyHitAi.length; i++) 
+        {
+            if ((touchAi[touchAi.length-1] == 90)||(touchAi[touchAi.length-1] == 91)||(touchAi[touchAi.length-1] == 92)||(touchAi[touchAi.length-1] == 93)||(touchAi[touchAi.length-1] == 94)||(touchAi[touchAi.length-1] == 95)||(touchAi[touchAi.length-1] == 96)||(touchAi[touchAi.length-1] == 97)||(touchAi[touchAi.length-1] == 98)||(touchAi[touchAi.length-1] == 99))
+            {
+                break;
+            }
+            if((touchAi[touchAi.length-1] +10 ) == alreadyHitAi[i])
+            {
+                break;
+            }
+            ite ++;
+        }
+        if(ite == alreadyHitAi.length)
+            {
+                if(verifBoat((touchAi[touchAi.length-1]+10 ),boatPlayer) == true )
+                {
+                    alreadyHitAi.push(touchAi[touchAi.length-1] +10);
+                    touchAi.push(touchAi[touchAi.length-1] +10);
+                    document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
+                    return;
+                }else
+                {
+                    alreadyHitAi.push(touchAi[touchAi.length-1]+10);
+                    console.log(touchAi[touchAi.length-1]+10);
+                    document.getElementById(alreadyHitAi[alreadyHitAi.length-1]).classList.add("miss");
+                    return;
+                }
+            }
+            ite=0;
+            for (let i = 0; i < alreadyHitAi.length; i++) 
+            {
+                if ((touchAi[touchAi.length-1] == 0)||(touchAi[touchAi.length-1] == 1)||(touchAi[touchAi.length-1] == 2)||(touchAi[touchAi.length-1] == 3)||(touchAi[touchAi.length-1] == 4)||(touchAi[touchAi.length-1] == 5)||(touchAi[touchAi.length-1] == 6)||(touchAi[touchAi.length-1] == 7)||(touchAi[touchAi.length-1] == 8)||(touchAi[touchAi.length-1] == 9))    
+                {
+                    break;
+                }
+                if((touchAi[touchAi.length-1] -10 ) == alreadyHitAi[i])
+                {
+                    break;
+                }
+                ite ++;
+            }
+            if(ite == alreadyHitAi.length)
+                {
+                    if(verifBoat((touchAi[touchAi.length-1]-10 ),boatPlayer) == true )
+                    {
+                        alreadyHitAi.push(touchAi[touchAi.length-1] -10);
+                        touchAi.push(touchAi[touchAi.length-1] -10);
+                        document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
+                        return;
+                    }else
+                    {
+                        alreadyHitAi.push(touchAi[touchAi.length-1]-10);
+                        console.log(touchAi[touchAi.length-1]-10);
+                        document.getElementById(alreadyHitAi[alreadyHitAi.length-1]).classList.add("miss");
+                        return;
+                    }
+                }
+       
+        if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
+                {  
+                    verifAround = true;
+                    alreadyHitAi.push(coup);
+                    touchAi.push(coup);
+                    document.getElementById(coup).classList.add("hit");
+                } else 
+                {
+                    alreadyHitAi.push(coup);
+                    console.log(coup);
+                    document.getElementById(coup).classList.add("miss");
+                }
+        verifAround = false;
+        return;
 }
 
-/*iaAction();
-already.push(coup);
-console.log(already);
-touche();*/
 
-/**
- * Cette fonction permet de rendre l'IA plus performante.
- * Elle permet si le coup d'avant a touché de tirer sur les cases autour sans pour autant sortir du tableau ou a l'opposé
- * Il me reste a segmenter en plusieurs fonctions la fonction pour la rendre plus lisible
- */
 
-coup = 0;
-function findNext(y)
+
+
+
+function iKillYou() 
 {
-    if(y==true)
+    if (touch1Time.length!=[])
     {
-        let tampon= 0;
-        for (let i = 0; i < already.length; i++) 
+        for (let i = 0; i < touch1Time.length; i++) 
         {
-            if ((coup==9)||(coup==19)||(coup==29)||(coup==39)||(coup==49)||(coup==59)||(coup==69)||(coup==79)||(coup==89)||(coup==99))
+            if(touch1Time[i] != null)
             {
-                break;
-            }
-            if((coup+1) != already[i])
-            {
-                tampon ++;
-                if (tampon == already.length) 
-                {
-                    prochainCoup = coup+1;
-                    return prochainCoup;    
-                }
-            }
-        }
 
-        tampon = 0;
-        for (let i = 0; i < already.length; i++) 
-        {
-            if ((coup==0)||(coup==10)||(coup==20)||(coup==30)||(coup==40)||(coup==50)||(coup==60)||(coup==70)||(coup==80)||(coup==90))
-            {
-                break;
-            }
-            if((coup-1) != already[i])
-            {
-                tampon ++;
-                if (tampon == already.length) 
+                alreadyHitAi.push(touch1Time[i]);
+                touchAi.push(touch1Time[i]);
+                document.getElementById(touch1Time[i]).classList.add("hit");
+             
+                touch1Time[i] = null;
+                if(coule(touch1Time)==true)
                 {
-                    prochainCoup = coup-1;
-                    return prochainCoup;    
+                    touch1Time=[];
                 }
+                return;
             }
         }
-
-        tampon = 0;
-        for (let i = 0; i < already.length; i++) 
-        {
-            if ((coup==90)||(coup==91)||(coup==92)||(coup==93)||(coup==94)||(coup==95)||(coup==96)||(coup==97)||(coup==98)||(coup==99))
-            {
-                break;
-            }
-            if((coup+10) != already[i])
-            {
-                tampon ++;
-                if (tampon == already.length) 
-                {
-                    prochainCoup = coup+10;
-                    return prochainCoup;    
-                }
-            }
-        }
-
-        tampon = 0;
-        for (let i = 0; i < already.length; i++)
-         {
-            if ((coup==0)||(coup==1)||(coup==2)||(coup==3)||(coup==4)||(coup==5)||(coup==6)||(coup==7)||(coup==8)||(coup==9))
-            {
-                break;
-            }
-            if((coup-10) != already[i])
-            {
-                tampon ++;
-                if (tampon == already.length) 
-                {
-                    prochainCoup = coup-10;
-                    return prochainCoup;    
-                }
-            }
-        }
-    prochainCoup = 101;
     }
+        else
+        {
+            touch1Time=[];
+            if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
+            {  
+                toucheRecupTab(boatPlayer,touch1Time,coup);
+                alreadyHitAi.push(coup);
+                touchAi.push(coup);
+                document.getElementById(coup).classList.add("hit");
+            } else 
+            {
+                alreadyHitAi.push(coup);
+                console.log(coup);
+                document.getElementById(coup).classList.add("miss");
+            }
+            return;
+        }
+    
 }
 
 
+function coule(tab)
+{
+    for (let i = 0; i< tab.length; i++)
+    {
+        if (tab[i] != null) 
+        {
+            return false 
+        }
+    }
+    return true; 
+}
 
-findNext(test);
-console.log(prochainCoup);
+function toucheRecupTab(tab,tab1,x) 
+{
+    for (let i = 0; i < tab.length; i++) 
+    {
+        for (let j = 0; j < tab[i].length; j++)
+        {
+            if (tab[i][j]==x) 
+            {
+                tab[i][j] = null;
+                for (let k = 0; k < tab[i].length; k++) 
+                {
+                   tab1.push(tab[i][k]);
+                } 
+            }
+        }
+    }
+
+}
