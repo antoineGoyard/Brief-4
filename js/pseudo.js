@@ -1,6 +1,6 @@
-
 let btnLogin = document.getElementById('btnMenu'); 
 let pseudoPlayerTwo = document.getElementById('pseudoPlayerTwo').value;
+
 
 btnLogin.addEventListener('click',()=>{
     let pseudoPlayerOne = document.getElementById('pseudoPlayerOne').value;
