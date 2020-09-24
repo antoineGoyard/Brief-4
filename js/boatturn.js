@@ -178,7 +178,7 @@ btn2.addEventListener('click', () => {
         if (boat4.className === 'draggable bateaunoturn ElementPlacer') {
 
         }
-        else {
+        else { 
 
             if (srcboat4 == "./img/vaisseau3Rouge.png") {
                 srcboat4 = "./img/vaisseau3Rouge90.png";

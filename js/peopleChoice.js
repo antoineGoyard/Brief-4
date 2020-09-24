@@ -18,7 +18,7 @@ else if(people == 'empire')
     document.getElementById('boat-4').setAttribute('src', './img/vaisseau3Rouge.png');
     document.getElementById('boat-5').setAttribute('src', './img/vaisseau3Rouge.png');
 }
-else
+else 
 {
     document.getElementById('boat-1').setAttribute('src', './img/vaisseau1Bleu.png');
     document.getElementById('boat-2').setAttribute('src', './img/vaisseau2Bleu.png');
