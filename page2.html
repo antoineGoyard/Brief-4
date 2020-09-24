@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pass'War</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b93042111.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!---------------------------------début container principal---------------------------------> 
+<!------------------------------------------------------------------------------------------->
+    <div id="container">
+<!----------------------------------gestion du son------------------------------------------->
+<!------------------------------------------------------------------------------------------->
+<audio id="audioAccueil" src="audio/space-battle.mp3" autoplay></audio>
+<button class="sound" id="play">
+    <i class="fas fa-volume-up"></i>
+</button>
+<button class="hidden" id="muted"><i class="fas fa-volume-mute"></i></button>
+       
+<!------------------------------Récupération du pseudo--------------------------------------->
+<section id="sectionInscription">
+    <div class="containerInscription">
+        <h1>Entrez un pseudo :</h1>
+        <div class="gradient-border">
+            <input id="pseudoPlayerOne" type="pseudo" name="pseudo" placeholder="Votre pseudo">
+        </div>
+          <button id="btnMenu" class="btnBtnBar">Jouer</button>
+    </div>
+</section>
+
+<!-------------------------------------------Menu Principal----------------------------------> 
+<!------------------------------------------------------------------------------------------->
+<section id="sectionMenu" class="hidden">
+    <div class="containerMenu">
+       
+        <button class="btn" id="btnSolo">Solo</button>
+        <button class="btn" id="btnDuo">Duo</button>
+        <button class="btn" id="btnMulti">Multi</button>
+        <button class="btn" id="btnScore">Scores</button>
+        <button class="btn" id="btnOptions">Options</button> 
+    </div>
+
+</section>
+
+<!----------------------------------------------Menu solo------------------------------------> 
+<!------------------------------------------------------------------------------------------->
+<section id="sectionMenuSolo" class="hidden">
+    <button class="return" id="returnMenu"><i class="fas fa-chevron-left"></i> Menu</button>
+    <div class="containerSolo">
+        <h1 class="titreVert">Choisir le niveau:</h1>
+            <div class="checkbox">
+                <div class="labelCheckbox">
+                    <input type="radio" id="easy" name="niveau" value="easy" checked><label for="easy">Facile</label>
+                </div>
+                <div class="labelCheckbox">
+                    <input type="radio" id="medium" name="niveau" value="medium"><label for="medium">Moyen</label>
+                </div>
+                <div class="labelCheckbox">
+                    <input type="radio" id="difficult" name="niveau" value="difficult"><label for="difficult">Difficile</label>
+                </div> 
+                <div class="labelCheckbox">
+                    <input type="radio" id="doom" name="niveau" value="doom"><label for="doom">Doom</label>
+                </div>     
+            </div>
+            <h2 class="titreVert">Choisir l'équipe:</h2>
+            <div class="checkbox">
+                
+                    <div class="labelCheckbox">
+                        <input type="radio" id="republique" name="team" value="republique"><label for="republique">République</label>
+                    </div>
+                    <div class="labelCheckbox">
+                        <input type="radio" id="empire" name="team" value="empire"><label for="empire">Empire</label>
+                    </div> 
+            </div>
+
+         <button class="btnGame" id="btnJouerSolo">Jouer</button>   
+     </div>    
+</section>
+
+<!-----------------------------------------Menu jeu duo-------------------------------------->
+<!------------------------------------------------------------------------------------------->
+<section id="sectionMenuDuo" class="hidden">
+    <button class="return" id="duoReturnMenu"><i class="fas fa-chevron-left"></i> Menu</button>
+    <div class="menuDuoColumn">
+        <div  class="containerDuo">
+            <div class="menuDuo">
+                <label class="titreVert">Player 1</label>
+            
+                    <input id="PlayerOneDuo" type="pseudo" placeholder="entrez votre pseudo" value="">
+           
+            </div>
+            <div class="menuDuo">
+                <label class="titreRouge">Player 2</label>
+       
+                    <input id="pseudoPlayerTwo" type="pseudo" placeholder="entrez votre pseudo">
+        
+            </div> 
+    
+        </div>
+
+        <button class="btnBtnBar"id="btnJouerDuo">Jouer</button>
+    </div>
+</section>
+
+<!-----------------------------------------Page game over------------------------------------>
+<!------------------------------------------------------------------------------------------->
+<section id="sectionGameOver" class="hidden">
+    <h1>Game Over</h1> 
+    <div class="btnBar">
+        <button class="btnBtnBar"><a href="#">Menu</a></button>
+        <button class="btnBtnBar">Rejouer</button>
+    </div>
+</section>
+
+<!---------------------------------------Page victoire solo---------------------------------->
+<!------------------------------------------------------------------------------------------->
+<section id="sectionVictoireSolo" class="hidden">
+    <h1>Victoire</h1> 
+    <div class="btnBar">
+        <button class="btnBtnBar"><a href="#">Menu</a></button>
+        <button class="btnBtnBar">Rejouer</button>
+    </div>
+</section>
+
+<!---------------------------------------Page victoire duo-----------------------------------> 
+<!------------------------------------------------------------------------------------------->
+<section id="sectionVictoireDuo" class="hidden">
+    <h1>Victoire</h1><p class="center">nom du joueur</p>
+    <div class="btnBar">
+        <button class="btnBtnBar"><a href="#">Menu</a></button>
+        <button class="btnBtnBar">Rejouer</button>
+    </div>
+</section>
+
+<!--------------------------------------Affichage des scores---------------------------------> 
+<!------------------------------------------------------------------------------------------->
+<section id="sectionScore" class="hidden">
+    <button class="return" id="scoreReturnMenu"><i class="fas fa-chevron-left"></i> Menu</button>
+    <div class="sectionScore">
+        <div class="score">
+            <h2 class="titreVert">Votre Score</h2>
+   
+                <div>1.</div>
+                <div>2.</div>
+                <div>3.</div>
+                <div>4.</div>
+                <div>5.</div>
+                <div>6.</div>
+                <div>7.</div>
+                <div>8.</div>
+                <div>9.</div>
+                <div>10.</div>
+        </div>
+        <div class="score">
+            <h2 class="titreRouge">Score Général</h2>
+    
+                <div>1.</div>
+                <div>2.</div>
+                <div>3.</div>
+                <div>4.</div>
+                <div>5.</div>
+                <div>6.</div>
+                <div>7.</div>
+                <div>8.</div>
+                <div>9.</div>
+                <div>10.</div>
+    
+        </div>
+    </div>
+</section>
+<!------------------------------------------options------------------------------------------> 
+<!------------------------------------------------------------------------------------------->
+<section id="sectionOptions" class="hidden"> 
+    <div class="containerMenu">
+        <h1>Options</h1>
+        <label class="labelOptions">Musique</label>
+            <div class="btnOptionsBar">
+            <button id="musicOn" class="btnOptions">On</button>
+            <button id="musicOff" class="btnOptions">Off</button>
+            </div>
+        <label class="labelOptions">Son</label>
+            <div class="btnOptionsBar">
+        <button class="btnOptions">On</button>
+        <button class="btnOptions">Off</button>
+            </div>
+        <button class="btn" id='fullscreen'>Fullscreen</button>
+        <button id="btnMenu" class="btn">Menu</button>
+    </div>  
+</section>
+<!-------------------------------------Fin container principal------------------------------->
+<!------------------------------------------------------------------------------------------->
+</div>
+
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/icone.js"></script>
+<script type="text/javascript" src="js/options.js"></script>
+<script type="text/javascript" src="js/pseudo.js"></script>
+</body>
+</html>
