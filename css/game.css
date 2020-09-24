@@ -111,7 +111,7 @@ table
 }
 #btn_btn1
 {
-    margin-top: 81vh;
+    margin-top: 45vw;
 }
 #btn_btn2
 {
@@ -351,4 +351,8 @@ video
         margin-left: 100vw;
         margin-top: 50vh;
     }
+}
+#responsive
+{
+    display: none;
 }
