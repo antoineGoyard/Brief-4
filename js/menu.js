@@ -118,10 +118,7 @@ addEventListener('click', (event) =>
     //sectionMulti.classList.add('hidden');
     console.log('Click Btn retour menu');
  })
-    //boutons redirections
- btnJouerSolo.addEventListener('click',()=>{
-     window.location = "gameSolo.html";
- })
+ //boutons redirections
  btnJouerDuo.addEventListener('click',()=>{
     window.location = "modeDuo.html";
 })
