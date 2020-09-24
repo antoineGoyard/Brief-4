@@ -120,8 +120,8 @@ addEventListener('click', (event) =>
  })
     //boutons redirections
  btnJouerSolo.addEventListener('click',()=>{
-     window.location = "solo.html";
+     window.location = "gameSolo.html";
  })
  btnJouerDuo.addEventListener('click',()=>{
-    window.location = "duo.html";
+    window.location = "modeDuo.html";
 })
