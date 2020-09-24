@@ -148,12 +148,29 @@ btn1.addEventListener('click', () => {
         document.getElementById('boat-4').classList.add('passagesmallboat-4');
         document.getElementById('boat-5').classList.add('passagesmallboat-5');
         document.getElementById('placementGeneral').classList.add('placementGridSmall');
+        break;
+        
+           
+        switch (difficult1) 
+        {
+            case 0:
+                gameLvl0();
+                break;
+
+            case 1:
+                gameLvl1();   
+                break;
+        
+            case 0:
+                gameLvl2();
+                
+        
+            case 0:
+                gameLvlDoom();
+                break;
+        }
 
 
-
-
-
-
-        gameLvl0();
+        
     }
 })
