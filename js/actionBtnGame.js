@@ -13,8 +13,8 @@ let boat5 = document.getElementById('boat-5');
 
 var difficult1 = localStorage.getItem("difficult");
 var people = localStorage.getItem("people");
-console.log(difficult1);
-console.log(people);
+//console.log(difficult1);
+//console.log(people);
 
 
 btn1.addEventListener('click', () => {
