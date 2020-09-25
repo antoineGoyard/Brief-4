@@ -148,7 +148,7 @@ btn1.addEventListener('click', () => {
         document.getElementById('boat-4').classList.add('passagesmallboat-4');
         document.getElementById('boat-5').classList.add('passagesmallboat-5');
         document.getElementById('placementGeneral').classList.add('placementGridSmall');
-        break;
+       // break;
         
            
         switch (difficult1) 
