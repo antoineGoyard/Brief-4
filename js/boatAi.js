@@ -200,22 +200,22 @@ for (let i = 0; i < bateau1.length; i++) {
             for (let o = 0; o < bateau4.length; o++) {
                 for (let m = 0; m < bateau5.length; m++) {
                     if (bateau1[i] == bateau2[u] || bateau1[i] == bateau3[t] || bateau1[i] == bateau4[o] || bateau1[i] == bateau5[m]) {
-                        console.log('pareil 1');
+                        //console.log('pareil 1');
                         bateau1Ai();
                     }
                     else if(bateau2[u] == bateau3[t] || bateau2[u] == bateau4[o] || bateau2[u] == bateau5[m])
                     {
-                        console.log('pareil 2');
+                        //console.log('pareil 2');
                         bateau2Ai();
                     }
                     else if(bateau3[t] == bateau4[o] || bateau3[t] == bateau5[m])
                     {
-                        console.log('pareil 3');
+                        //console.log('pareil 3');
                         bateau3Ai();
                     }
                     else if(bateau4[o] == bateau5[m])
                     {
-                        console.log('pareil 4');
+                       // console.log('pareil 4');
                         bateau4Ai();
                     }
                 }
