@@ -1,7 +1,6 @@
 let btnLogin = document.getElementById('btnMenu'); 
 let pseudoPlayerTwo = document.getElementById('pseudoPlayerTwo').value;
 let score = document.getElementById('score');
-localStorage.setItem('pseudo', pseudoPlayerTwo);
 
 btnLogin.addEventListener('click',()=>{
     let pseudoPlayerOne = document.getElementById('pseudoPlayerOne').value;
@@ -13,7 +12,7 @@ btnLogin.addEventListener('click',()=>{
 });
 
     
-//let storedName = localStorage.getItem('pseudoPlayerOne');
+let pseudoPlayerOne = localStorage.setItem('pseudoPlayerOne','');
 
 
 function validateForm() {

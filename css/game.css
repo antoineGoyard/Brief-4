@@ -110,13 +110,16 @@ table
 #btn_btn2
 {
     
-    margin-top: 5vh;
+    margin-top: 7vh;
 }
 /* Les Titres */
-.title_game
-{
-    padding: 3vh;
+.title_game {
+    text-align: right;
+    font-size: 4vh;
+    padding-top: 1%;
+    margin-right: 2%;
 }
+    
 /* Score */
 #score
 {
@@ -129,6 +132,9 @@ table
 /* Vidéo */
 video
 {
+    margin-bottom: 0;
+    margin-top: 5%;
+    margin-right: 1%;
     width: 40vw;
     height: auto;
     border: solid 1px black;
@@ -291,7 +297,7 @@ video
 }
 #bateauplacer
 {
-    margin-top: 10vh;
+    margin-top: 5vh;
     height: 31vh;
 }
 #letableau.changementplace
