@@ -36,10 +36,6 @@ table
     width: 45vw;
     height: 45vw;
     background-color: #3C383858;
-    
-  
-    
-    
 }
 #letableau, .uneligne, .battleCase 
 {
@@ -93,10 +89,8 @@ table
 /* Placement Explication */
 #placementexplication
 {
-   
     width: 50%;
     flex: 1;
-    
 }
 
 /* Placement des bateaux */
@@ -357,15 +351,7 @@ video
     display: none;
 }
 
-.btn {
-    width: 50%;  
-    height: 10%;
-    margin: 0 auto;
-    color: #FFFFFF;
-    background-color: #000000;
-    font-family: 'Press Start 2P', cursive;
-}
-.btn:hover,.btnGame:hover,.btnBtnBar:hover,.return:hover {
+.btnGame:hover,.btnBtnBar:hover,.return:hover {
     box-shadow: -3px 3px 0 rgb(71, 71, 71);
 }
 .btnGame {
@@ -382,15 +368,18 @@ video
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
     width: 15%;
-    height: 10%;
-    margin: 0 auto;
+    height: 100%;
+    padding: 1%;
 }
 .btnBar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10%;
+    margin-top: 8%;
+    justify-content: space-around;
     
+}
+#sectionVictoireSolo h1 {
+    margin-top: 20%;
 }
 .return {
     width: 6%;
