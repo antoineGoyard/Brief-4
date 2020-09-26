@@ -151,7 +151,27 @@ btn1.addEventListener('click', () => {
         document.getElementById('boat-4').classList.add('passagesmallboat-4');
         document.getElementById('boat-5').classList.add('passagesmallboat-5');
         document.getElementById('placementGeneral').classList.add('placementGridSmall');
-        gameLvl0();
+        console.log(difficult1);
+        if(difficult1 == 0)
+        {
+            console.log("########11111111111###############");
+                gameLvl0();
+        }
+        else if ( difficult1 == 1)
+        {
+            console.log("########222222222222222###############");
+                gameLvl1(); 
+        }
+        else if ( difficult1 == 2)
+        {
+            console.log("########3333333333333333###############");
+                gameLvl2();
+        }
+        else if ( difficult1 == 3)
+        {
+            console.log("###444444444444444444441###############");
+                gameLvlDoom();
+        }
     }
 })
 
