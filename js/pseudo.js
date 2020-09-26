@@ -12,3 +12,12 @@ btnLogin.addEventListener('click',()=>{
 
     
 let storedName = localStorage.getItem('pseudo');
+
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  } 

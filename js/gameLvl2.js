@@ -1,68 +1,64 @@
-function gameLvl2() 
-{
+function gameLvl2() {
     document.getElementById('game_board_ia').addEventListener('click', (event) => //detects where the player clicked and returns the cell id
     {
         actualTurn++;
-        if (touchAi.length == 17) 
-        {
-            console.log('Victoire IA');
-            alert('Victoire IA')
-        }
-        else if (touchPlayer.length == 17) 
-        {
-            console.log('Victoire Player');
-            alert('Victoire Player')
-        }
-        else {
-            console.log(event.target.id);
-            if (event.target.id < 4000) 
-            {
-                hitPlayer = event.target.id;
-                document.getElementById(hitPlayer).id = "cliquer" + hitPlayer;
-                console.log(hitPlayer);
-                
-            }
-            else {
-                alert('Vous avez déjà tiré a cet endroit !')
-            }
+
+
+
+        console.log(event.target.id);
+        if (event.target.id < 4000) {
+            hitPlayer = event.target.id;
+            document.getElementById(hitPlayer).id = "cliquer" + hitPlayer;
+            console.log(hitPlayer);
 
             alreadyHitPlayer.push(hitPlayer);
             let verif = hitPlayer - 3000;
             console.log(verif);
             //console.log(boatAi);
             console.log(verifBoat(verif, boatAi));
-
-            if (verifBoat(verif, boatAi) == true) 
-            {
+    
+            if (verifBoat(verif, boatAi) == true) {
                 touchPlayer.push(hitPlayer);
                 document.getElementById("cliquer" + hitPlayer).classList.add("hit");
-
+    
             } else {
                 document.getElementById("cliquer" + hitPlayer).classList.add("miss");
             }
+    
+            if (touchPlayer.length == 17) {
+                console.log('Victoire Player');
+                alert('Victoire Player')
+            }
             //AI
-
-            if (touch1Time != [])
-            {
+    
+            if (touch1Time != []) {
                 iKillYou();
             }
-            else
-            {
-                touch1Time=[];
-                if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
-                {  
-                    toucheRecupTab(boatPlayer,touch1Time,coup);
+            else {
+                touch1Time = [];
+                if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) {
+                    toucheRecupTab(boatPlayer, touch1Time, coup);
                     alreadyHitAi.push(coup);
                     touchAi.push(coup);
                     document.getElementById(coup).classList.add("hit");
-                } else 
-                {
+                } else {
                     alreadyHitAi.push(coup);
                     console.log(coup);
                     document.getElementById(coup).classList.add("miss");
                 }
             }
-            console.log(alreadyHitAi);
+            if (touchAi.length == 17) {
+                console.log('Victoire IA');
+                alert('Victoire IA')
+            }
+
         }
+        else {
+            alert('Vous avez déjà tiré a cet endroit !')
+        }
+
+       
+        console.log(alreadyHitAi);
+
     });
 }
