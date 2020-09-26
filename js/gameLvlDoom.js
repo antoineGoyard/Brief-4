@@ -38,7 +38,7 @@ function gameLvlDoom() {
 
             if (touchPlayer.length == 17) {
                 console.log('Victoire Player');
-                alert('Victoire Player')
+                winner();
             }
 
             console.log(alreadyHitAi);
@@ -58,7 +58,7 @@ function gameLvlDoom() {
 
             if (touchAi.length == 17) {
                 console.log('Victoire IA');
-                alert('Victoire IA')
+                defeat();
             }
 
         }

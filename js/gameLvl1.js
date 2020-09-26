@@ -27,7 +27,7 @@ function gameLvl1() {
             }
             if (touchAi.length == 17) {
                 console.log('Victoire IA');
-                alert('Victoire IA')
+                winner();
             }
             //AI
 
@@ -47,7 +47,7 @@ function gameLvl1() {
             }
             if (touchPlayer.length == 17) {
                 console.log('Victoire Player');
-                alert('Victoire Player')
+                defeat();
             }
 
             console.log(alreadyHitAi);

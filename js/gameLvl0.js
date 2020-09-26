@@ -32,7 +32,10 @@ function gameLvl0() {
 
                 if (touchPlayer.length == 17) {
                     console.log('Victoire Player');
-                    alert('Victoire Player')
+                    winner();
+
+
+
                 }
 
                 coup = 0;
@@ -48,7 +51,7 @@ function gameLvl0() {
                 }
                 if (touchAi.length == 17) {
                     console.log('Victoire IA');
-                    alert('Victoire IA')
+                    defeat();
                 }
                 
                 console.log(alreadyHitAi);
