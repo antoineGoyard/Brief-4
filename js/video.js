@@ -9,7 +9,7 @@ soundOn.addEventListener('click',()=>{
     setTimeout(function(){
     console.log("Hello");
     document.getElementById('btnSkip').click();
-}, 8000);
+}, 10000);
 
 });
 
@@ -20,7 +20,7 @@ soundOff.addEventListener('click',()=>{
     setTimeout(function(){
         console.log("Hello");
         document.getElementById('btnSkip').click();
-    }, 8000);
+    }, 10000);
 });
 
 

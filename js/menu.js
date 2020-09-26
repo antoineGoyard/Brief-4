@@ -64,7 +64,18 @@ addEventListener('click', (event) =>
         sectionMenu.classList.add('hidden');
         console.log('Click Btn Option');
     }
-
+    // Bouton vers le Menu
+     else if( event.target.id == "btnMenuOptions")
+    {
+        sectionMenu.classList.remove('hidden');
+        sectionOption.classList.add('hidden');
+        sectionScore.classList.add('hidden');
+        sectionPseudo.classList.add('hidden');
+        //sectionMulti.classList.add('hidden');
+        console.log('Click Btn Menu');
+    }
+    // Si il y a un clic ailleurs que sur un bouton
+    
 
     // gestion icone son
     if( event.target.id == "btnPlay")

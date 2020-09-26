@@ -378,7 +378,7 @@ video
     justify-content: space-around;
     
 }
-#sectionVictoireSolo h1 {
+#sectionVictoireSolo h1, #sectionGameOver h1{
     margin-top: 20%;
 }
 .return {

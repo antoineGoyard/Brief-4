@@ -93,7 +93,7 @@ form {
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
     width: 18%;
-    height: 30%;
+    height: 10%;
     margin: 0 auto;
     margin-bottom: 10%;
 }
@@ -135,6 +135,9 @@ form {
 .containerInscription input {
     width: 100%;
     height: 85%;
+}
+.containerInscription .btnBtnBar {
+    height: 30%;
 }
 .gradient-border {
     margin: 0 auto;
@@ -230,9 +233,7 @@ form {
     justify-content: space-around;
     height:80%;
 }
-.menuDuoColumn .btnBtnBar {
-    height: 30%;
-}
+
 .containerDuo {
     display: flex;
     flex-direction: row;
