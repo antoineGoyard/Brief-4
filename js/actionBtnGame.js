@@ -140,18 +140,22 @@ document.getElementById('btn_btn1').addEventListener('click', () => {
         switch (difficult1) 
         {
             case 0:
+                console.log("########11111111111###############");
                 gameLvl0();
                 break;
 
             case 1:
+                console.log("########222222222222222###############");
                 gameLvl1();   
                 break;
         
-            case 0:
+            case 2:
+                console.log("########3333333333333333###############");
                 gameLvl2();
+                break;
                 
-        
-            case 0:
+            case 3:
+                console.log("###444444444444444444441###############");
                 gameLvlDoom();
                 break;
         }
