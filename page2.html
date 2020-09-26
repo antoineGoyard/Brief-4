@@ -26,9 +26,11 @@
 <section id="sectionInscription">
     <div class="containerInscription">
         <h1>Entrez un pseudo :</h1>
+        <form name="logginForm">
         <div class="gradient-border">
             <input id="pseudoPlayerOne" type="pseudo" name="pseudo" placeholder="Votre pseudo">
         </div>
+    </form>
           <button id="btnMenu" class="btnBtnBar">Jouer</button>
     </div>
 </section>
@@ -55,7 +57,7 @@
         <h1 class="titreVert">Choisir le niveau:</h1>
             <div class="checkbox">
                 <div class="labelCheckbox">
-                    <input type="radio" id="easy" name="niveau" value="easy" checked><label for="easy"></label>Facile</label>
+                    <input type="radio" id="easy" name="niveau" value="easy" checked><label for="easy">Facile</label>
                 </div>
                 <div class="labelCheckbox">
                     <input type="radio" id="medium" name="niveau" value="medium"><label for="medium">Moyen</label>
@@ -104,26 +106,6 @@
         </div>
 
         <button class="btnBtnBar"id="btnJouerDuo">Jouer</button>
-    </div>
-</section>
-
-<!-----------------------------------------Page game over------------------------------------>
-<!------------------------------------------------------------------------------------------->
-<section id="sectionGameOver" class="hidden">
-    <h1>Game Over</h1> 
-    <div class="btnBar">
-        <button class="btnBtnBar"><a href="#">Menu</a></button>
-        <button class="btnBtnBar">Rejouer</button>
-    </div>
-</section>
-
-<!---------------------------------------Page victoire solo---------------------------------->
-<!------------------------------------------------------------------------------------------->
-<section id="sectionVictoireSolo" class="hidden">
-    <h1>Victoire</h1> 
-    <div class="btnBar">
-        <button class="btnBtnBar"><a href="#">Menu</a></button>
-        <button class="btnBtnBar">Rejouer</button>
     </div>
 </section>
 

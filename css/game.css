@@ -356,3 +356,49 @@ video
 {
     display: none;
 }
+
+.btn {
+    width: 50%;  
+    height: 10%;
+    margin: 0 auto;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+}
+.btn:hover,.btnGame:hover,.btnBtnBar:hover,.return:hover {
+    box-shadow: -3px 3px 0 rgb(71, 71, 71);
+}
+.btnGame {
+    width: 30%;
+    height: 12%;
+    margin: 0 auto;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+}
+.btnBtnBar {
+    
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    width: 15%;
+    height: 10%;
+    margin: 0 auto;
+}
+.btnBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    
+}
+.return {
+    width: 6%;
+    height: 5%;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin-top: 4%;
+    margin-left: 1%;;
+}
