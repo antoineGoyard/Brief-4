@@ -25,7 +25,7 @@ function gameLvl1() {
             } else {
                 document.getElementById("cliquer" + hitPlayer).classList.add("miss");
             }
-            if (touchAi.length == 17) {
+            if (touchPlayer.length == 17) {
                 console.log('Victoire IA');
                 winner();
             }
@@ -45,7 +45,7 @@ function gameLvl1() {
                     document.getElementById(coup).classList.add("miss");
                 }
             }
-            if (touchPlayer.length == 17) {
+            if (touchAi.length == 17) {
                 console.log('Victoire Player');
                 defeat();
             }
