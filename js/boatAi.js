@@ -15,16 +15,12 @@ let direction3 = Math.floor(Math.random() * 2);
 let direction4 = Math.floor(Math.random() * 2);
 let direction5 = Math.floor(Math.random() * 2);
 
-console.log(direction1);
-console.log(direction2);
-console.log(direction3);
-console.log(direction4);
-console.log(direction5);
+
 
 function bateau1Ai() {
 
     if (direction1 == 0) {
-        console.log('direction 0');
+       // console.log('direction 0');
         let position1Ia = Math.floor(Math.random() * 100);
         position2Ia = position1Ia + 1;
         position3Ia = position2Ia + 1;
@@ -36,7 +32,7 @@ function bateau1Ai() {
     }
     else if (direction1 >= 1) {
 
-        console.log('direction 1');
+       // console.log('direction 1');
         let position1Ia = Math.floor(Math.random() * 60);
         position2Ia = position1Ia + 10;
         position3Ia = position2Ia + 10;
@@ -58,7 +54,7 @@ function bateau1Ai() {
 }
 function bateau2Ai() {
     if (direction2 == 0) {
-        console.log('direction 0');
+       // console.log('direction 0');
         let position1Ia = Math.floor(Math.random() * 100);
         position2Ia = position1Ia + 1;
         position3Ia = position2Ia + 1;
@@ -70,7 +66,7 @@ function bateau2Ai() {
     }
     else if (direction2 >= 1) {
 
-        console.log('direction 1');
+       // console.log('direction 1');
         let position1Ia = Math.floor(Math.random() * 60);
         position2Ia = position1Ia + 10;
         position3Ia = position2Ia + 10;
@@ -93,7 +89,7 @@ function bateau2Ai() {
 function bateau3Ai() {
 
     if (direction3 == 0) {
-        console.log('direction 0');
+       // console.log('direction 0');
         let position1Ia = Math.floor(Math.random() * 100);
         position2Ia = position1Ia + 1;
         position3Ia = position2Ia + 1;
@@ -103,7 +99,7 @@ function bateau3Ai() {
     }
     else if (direction3 >= 1) {
 
-        console.log('direction 1');
+        //console.log('direction 1');
         let position1Ia = Math.floor(Math.random() * 60);
         position2Ia = position1Ia + 10;
         position3Ia = position2Ia + 10;
@@ -127,7 +123,7 @@ function bateau4Ai() {
 
 
     if (direction4 == 0) {
-        console.log('direction 0');
+        //console.log('direction 0');
         let position1Ia = Math.floor(Math.random() * 100);
         position2Ia = position1Ia + 1;
         position3Ia = position2Ia + 1;
@@ -137,7 +133,7 @@ function bateau4Ai() {
     }
     else if (direction4 >= 1) {
 
-        console.log('direction 1');
+       // console.log('direction 1');
         let position1Ia = Math.floor(Math.random() * 60);
         position2Ia = position1Ia + 10;
         position3Ia = position2Ia + 10;
@@ -159,7 +155,7 @@ function bateau5Ai() {
 
 
     if (direction5 == 0) {
-        console.log('direction 0');
+       // console.log('direction 0');
         let position1Ia = Math.floor(Math.random() * 100);
         position2Ia = position1Ia + 1;
 
@@ -172,7 +168,7 @@ function bateau5Ai() {
     }
     else if (direction5 >= 1) {
 
-        console.log('direction 1');
+       // console.log('direction 1');
         let position1Ia = Math.floor(Math.random() * 60);
         position2Ia = position1Ia + 10;
 
@@ -229,5 +225,5 @@ for (let i = 0; i < bateau1.length; i++) {
 }
 
 
-boatAi = [[bateau1], [bateau2], [bateau3], [bateau4], [bateau5]];
+boatAi = [bateau1, bateau2, bateau3, bateau4, bateau5];
 console.log(boatAi);

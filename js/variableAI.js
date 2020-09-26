@@ -11,4 +11,5 @@ let coup;
 let actualTurn = 0;
 let touchPlayer = [];
 let alreadyHitPlayer = [];
-let hitPlayer = 0; // is the number of the box chosen by the play
+let hitPlayer = 0; 
+let actualTurn = 0;// is the number of the box chosen by the play
