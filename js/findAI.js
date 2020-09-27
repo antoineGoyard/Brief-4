@@ -9,6 +9,7 @@ function iKillYou()
         {
             if(touch1Time[i] != null)
             {
+                verifCoule(boatPlayer,touch1Time[i]);
                 alreadyHitAi.push(touch1Time[i]);
                 touchAi.push(touch1Time[i]);
                 document.getElementById(touch1Time[i]).classList.add("hit");
@@ -28,6 +29,7 @@ function iKillYou()
         if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
         {
             toucheRecupTab(boatPlayer, touch1Time, coup);
+            alert("touché");
             alreadyHitAi.push(coup);
             touchAi.push(coup);
             document.getElementById(coup).classList.add("hit");
