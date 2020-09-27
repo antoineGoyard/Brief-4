@@ -43,6 +43,7 @@ function gameLvl0() {
                 //console.log(alreadyHitAi);
                 if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
                 {
+                    verifCoule(boatPlayer,coup);
                     alreadyHitAi.push(coup);
                     touchAi.push(coup);
                     document.getElementById(coup).classList.add("hit");
