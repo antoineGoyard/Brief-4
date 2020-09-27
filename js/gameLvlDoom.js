@@ -52,6 +52,7 @@ function gameLvlDoom() {
             // Ai 
             if (verifBoat(tabDoom[indexDoom], boatPlayer) == true) {
                 coup = tabDoom[indexDoom];
+                verifCoule(boatPlayer,coup);
                 alreadyHitAi.push(coup);
                 touchAi.push(coup);
                 document.getElementById(coup).classList.add("hit");
