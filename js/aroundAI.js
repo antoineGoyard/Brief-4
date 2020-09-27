@@ -18,6 +18,7 @@ function findNext()
         {
             if(verifBoat((touchAi[touchAi.length-1] +1 ),boatPlayer) == true )
             {
+                verifCoule(boatPlayer, (touchAi[touchAi.length-1]+1));
                 alreadyHitAi.push(touchAi[touchAi.length-1] +1);
                 touchAi.push(touchAi[touchAi.length-1] +1);
                 document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
@@ -47,6 +48,7 @@ function findNext()
             {
                 if(verifBoat((touchAi[touchAi.length-1] -1 ),boatPlayer) == true )
                 {
+                    verifCoule(boatPlayer, (touchAi[touchAi.length-1]-1));
                     alreadyHitAi.push(touchAi[touchAi.length-1] -1);
                     touchAi.push(touchAi[touchAi.length-1] -1);
                     document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
@@ -76,6 +78,7 @@ function findNext()
             {
                 if(verifBoat((touchAi[touchAi.length-1]+10 ),boatPlayer) == true )
                 {
+                    verifCoule(boatPlayer, (touchAi[touchAi.length-1]+10));
                     alreadyHitAi.push(touchAi[touchAi.length-1] +10);
                     touchAi.push(touchAi[touchAi.length-1] +10);
                     document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
@@ -105,6 +108,7 @@ function findNext()
                 {
                     if(verifBoat((touchAi[touchAi.length-1]-10 ),boatPlayer) == true )
                     {
+                        verifCoule(boatPlayer, (touchAi[touchAi.length-1]-10));
                         alreadyHitAi.push(touchAi[touchAi.length-1] -10);
                         touchAi.push(touchAi[touchAi.length-1] -10);
                         document.getElementById(touchAi[touchAi.length-1]).classList.add("hit");
@@ -121,6 +125,7 @@ function findNext()
         if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
                 {  
                     verifAround = true;
+                    verifCoule(boatPlayer,coup);
                     alreadyHitAi.push(coup);
                     touchAi.push(coup);
                     document.getElementById(coup).classList.add("hit");
