@@ -12,4 +12,4 @@ var positionBateau5P2;
 
 
 var boatPlayer1;
-var boatPlayer2;
+var boatPlayer2 = new Array;

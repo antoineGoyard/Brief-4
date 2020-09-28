@@ -394,6 +394,7 @@
 .title
 {
     margin-top: 50vh;
+    
 }
 #title_player1
 {
@@ -401,6 +402,16 @@
     height: 100vh;
 }
 #btn_gamep1
+{
+    margin-top: 5%;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    width: 15%;
+    height: 5%;
+    padding: 1%;
+}
+#btn_game2p1
 {
     margin-top: 5%;
     color: #FFFFFF;
@@ -420,9 +431,21 @@
     height: 5%;
     padding: 1%;
 }
+#btn_game2p2
+{
+    margin-top: 5%;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    width: 15%;
+    height: 5%;
+    padding: 1%;
+}
 .title_game
 {
     text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 #section_player2
 {
@@ -443,4 +466,13 @@
 {
     width: 100vw;
     height: 100vh;
+}
+#section_go
+{
+    margin-top: 30vh;
+}
+.sansvisuel
+{
+    margin-left: 25vw;
+    margin-right: 25vw;
 }

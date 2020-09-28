@@ -145,12 +145,12 @@ btn1.addEventListener('click', () => {
         document.getElementById('title_game_player').classList.add('hidden');
         document.getElementById('letableau').classList.add('changementplace');
         document.getElementById('letableauvisible').classList.add('changementplace');
-        document.getElementById('boat-1').classList.add('passagesmallboat-1');
-        document.getElementById('boat-2').classList.add('passagesmallboat-2');
-        document.getElementById('boat-3').classList.add('passagesmallboat-3');
-        document.getElementById('boat-4').classList.add('passagesmallboat-4');
-        document.getElementById('boat-5').classList.add('passagesmallboat-5');
-        document.getElementById('placementGeneral').classList.add('placementGridSmall');
+        document.getElementById('boat-1P1').classList.add('passagesmallboat-1');
+        document.getElementById('boat-2P1').classList.add('passagesmallboat-2');
+        document.getElementById('boat-3P1').classList.add('passagesmallboat-3');
+        document.getElementById('boat-4P1').classList.add('passagesmallboat-4');
+        document.getElementById('boat-5P1').classList.add('passagesmallboat-5');
+        document.getElementById('placemeentGrille').classList.add('placementGridSmall');
         console.log(difficult1);
         if(difficult1 == 0)
         {

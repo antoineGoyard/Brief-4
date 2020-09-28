@@ -154,7 +154,7 @@ for (let u = 0; u < 1; u++)
             itemNew.classList.add('player');
             itemNew.classList.add('dropper');
             document.getElementById(ligneID).appendChild(itemNew);
-            varaible10000++
+            idgameP1++
         }
     }
 }
@@ -186,7 +186,7 @@ for (let u = 0; u < 1; u++)
             itemNew.classList.add('player');
             itemNew.classList.add('dropper');
             document.getElementById(ligneID).appendChild(itemNew);
-            varaible10000++
+            idgameP2++
         }
     }
 }
