@@ -6,6 +6,7 @@ function winner()
     document.getElementById('score').classList.add('hidden');
     document.getElementById('placementGeneral').classList.add('hidden');
     document.getElementById('sectionVictoireSolo').classList.remove('hidden');
+    document.getElementById('scorePlayer').innerText = "Votre score: " + score;
 }
 
 function defeat()
