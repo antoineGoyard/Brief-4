@@ -9,6 +9,19 @@ var boatPlayer2 = new Array;
 
 var playerwinner;
 
+var player1 = "Roger";
+var player2 = "Bernadette";
+
+document.getElementById('namePlayer1').append(player1);
+document.getElementById('namePlayer11').append(player1);
+document.getElementById('namePlayer13').append(player1);
+
+document.getElementById('namePlayer2').append(player2);
+document.getElementById('namePlayer22').append(player2);
+document.getElementById('namePlayer23').append(player2);
+
+//for( x = 0 ; x <= )
+
 bouton_board_yes.addEventListener('click', () => {
     document.getElementById('section_go').classList.add('hidden');
     affichageBoardGame = 1;
