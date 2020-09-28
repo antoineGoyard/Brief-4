@@ -364,6 +364,19 @@
    border-collapse: collapse;
    margin-right: 2vh;
 }
+#boardP1, .ligneboardP1, .battlecaseboardP1
+{
+   padding: 10px;
+   border: 1px solid white;
+   border-collapse: collapse;
+   margin-right: 2vh;
+}
+#boardP2, .ligneboardP2, .battlecaseboardP2{
+   padding: 10px;
+   border: 1px solid white;
+   border-collapse: collapse;
+   margin-right: 2vh;
+}
 .placemeentGrille
 {
     width: 45vw;
@@ -406,4 +419,28 @@
     width: 15%;
     height: 5%;
     padding: 1%;
+}
+.title_game
+{
+    text-align: center;
+}
+#section_player2
+{
+    width: 100vw;
+    height: 100vh;
+}
+#section_player1
+{
+    width: 100vw;
+    height: 100vh;
+}
+#playP1
+{
+    width: 100vw;
+    height: 100vh;
+}
+#playP2
+{
+    width: 100vw;
+    height: 100vh;
 }

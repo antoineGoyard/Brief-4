@@ -123,3 +123,70 @@ for (let u = 0; u < 1; u++)
         }
     }
 }
+
+
+
+
+
+let idgameP1 = 2000
+
+for (let u = 0; u < 1; u++) 
+{
+    let newItemNew = document.createElement('table');
+    let letableau = 'boardP1';
+    newItemNew.id = (letableau);
+    document.getElementById('board_for_gameP1').appendChild(newItemNew);
+
+    for (let i = 0; i < 10; i++) 
+    {
+        let newItem = document.createElement('tr');
+        newItem.classList.add('ligneboardP1');
+        let ligneID = 'ligneboardP1' + i;
+        newItem.id = (ligneID);
+        document.getElementById('boardP1').appendChild(newItem);
+
+
+        for (let x = 0; x < 10; x++) 
+        {
+            let itemNew = document.createElement('td');
+            itemNew.classList.add('battlecaseboardP1');
+            itemNew.id = (idgameP1);
+            itemNew.classList.add('player');
+            itemNew.classList.add('dropper');
+            document.getElementById(ligneID).appendChild(itemNew);
+            varaible10000++
+        }
+    }
+}
+
+
+let idgameP2 = 3000
+
+for (let u = 0; u < 1; u++) 
+{
+    let newItemNew = document.createElement('table');
+    let letableau = 'boardP2';
+    newItemNew.id = (letableau);
+    document.getElementById('board_for_gameP2').appendChild(newItemNew);
+
+    for (let i = 0; i < 10; i++) 
+    {
+        let newItem = document.createElement('tr');
+        newItem.classList.add('ligneboardP2');
+        let ligneID = 'ligneboardP2' + i;
+        newItem.id = (ligneID);
+        document.getElementById('boardP2').appendChild(newItem);
+
+
+        for (let x = 0; x < 10; x++) 
+        {
+            let itemNew = document.createElement('td');
+            itemNew.classList.add('battlecaseboardP2');
+            itemNew.id = (idgameP2);
+            itemNew.classList.add('player');
+            itemNew.classList.add('dropper');
+            document.getElementById(ligneID).appendChild(itemNew);
+            varaible10000++
+        }
+    }
+}

@@ -11,9 +11,10 @@
 <body>
 
   <!-- -->
-  <section id="title_player1">
+  <section id="title_player1" class="hidden">
 
     <div class="title"> <span class="namePlayer1"></span> à toi de jouer !</div>
+    <div class="title hidden"> <span class="namePlayer1"></span> à toi de placer tes bateaux</div>
     <button id="btn_gamep1" type="submit">Jouer</button>
 
   </section>
@@ -59,20 +60,20 @@
       <div id="bateauplacer" class="passagevertical">
 
 
-        <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P1"
+        <span class="placement" id="200000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P1"
             src="./img/vaisseau1Bleu.png"></span>
 
-        <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P1"
+        <span class="placement" id="200001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P1"
             src="./img/vaisseau2Bleu.png"></span>
 
 
-        <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P1"
+        <span class="placement" id="200002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P1"
             src="./img/vaisseau3Bleu.png"></span>
 
-        <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P1"
+        <span class="placement" id="200003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P1"
             src="./img/vaisseau3Bleu.png"></span>
 
-        <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P1"
+        <span class="placement" id="200004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P1"
             src="./img/vaisseau3Bleu.png"></span>
 
 
@@ -82,15 +83,12 @@
     </div>
   </div>
   </div>
-  <div id="score">
-        <h3> Tour n° [N]</h3>
-        <h3>Votre score : [SCORE]</h3>
-      </div>
-  </section>
+ 
 
-  <section id="title_player2">
+  <section id="title_player2" class="hidden">
 
-    <div class="title"> <span class="namePlayer2"></span> à toi de jouer !</div>
+    <div class="title hidden"> <span class="namePlayer2"></span> à toi de jouer !</div>
+    <div class="title hidden"> <span class="namePlayer2"></span> à toi de placer tes bateaux</div>
     <button id="btn_gamep2" type="submit">Jouer</button>
 
   </section>
@@ -137,20 +135,20 @@
         <div id="bateauplacer" class="passagevertical">
 
 
-          <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P2"
+          <span class="placement" id="30000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P2"
               src="./img/vaisseau1Rouge.png"></span>
 
-          <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P2"
+          <span class="placement" id="30001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P2"
               src="./img/vaisseau2Rouge.png"></span>
 
 
-          <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P2"
+          <span class="placement" id="30002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P2"
               src="./img/vaisseau3Rouge.png"></span>
 
-          <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P2"
+          <span class="placement" id="30003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P2"
               src="./img/vaisseau3Rouge.png"></span>
 
-          <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P2"
+          <span class="placement" id="30004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P2"
               src="./img/vaisseau3Rouge.png"></span>
 
 
@@ -159,17 +157,32 @@
 
       </div>
     </div>
-    <div id="score">
-          <h3> Tour n° [N]</h3>
-          <h3>Votre score : [SCORE]</h3>
-        </div>
+
+
+    
+   
   </section>
 
+
+  <section id="playP1">
+    <div class="title_game">C'est <span class="namePlayer1"></span> qui joue !</div>
+    <div id="board_for_gameP1"></div>
+
+  </section>
+
+
+  <section id="playP2">
+     <div class="title_game">C'est <span class="namePlayer2"></span> qui joue !</div>
+    <div id="board_for_gameP2"></div>
+
+  </section>
+  <script src="js/modeDuo/variableDuo.js"></script>
   <script src="js/modeDuo/duoGrille.js"></script>
+  <script src="js/modeDuo/placeBoat.js"></script>
+  <script src="js/modeDuo/playerTurn.js"></script>
   <script src="js/randomCoupIA.js"></script>
   <script src="js/modeDuo/duoBoatTurn.js"></script>
   <script src="js/verifBoat.js"></script>
-  <script src="js/boatturn.js"></script>
   <script src="js/draganddrop.js"></script>
 
 
