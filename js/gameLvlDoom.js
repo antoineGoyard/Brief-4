@@ -1,4 +1,5 @@
 function gameLvlDoom() {
+    score = 0;
 
     let indexDoom = 0;
     let tabDoom = [];
@@ -41,6 +42,7 @@ function gameLvlDoom() {
                 }
                 if (touchPlayer.length == 17) 
                 {
+                    score = 999999;
                     //console.log('Victoire Player');
                     winner();
                 }

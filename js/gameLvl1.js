@@ -1,4 +1,6 @@
 function gameLvl1() {
+    score = 0;
+    bonus = 1;
     document.getElementById('game_board_ia').addEventListener('click', (event) => //detects where the player clicked and returns the cell id
     {
         actualTurn++;
@@ -18,15 +20,15 @@ function gameLvl1() {
                 //console.log(verifBoat(verif, boatAi)); 
                 if (verifBoat(verif, boatAi) == true) 
                 {
-                   console.log(verif);
-                   console.log(boatAi);
+                    bonus +=1;
+                    score += (150*bonus);
                     touchPlayer.push(hitPlayer);
                     document.getElementById("cliquer" + hitPlayer).classList.add("hit");
                     verifCoule(boatAi,verif); 
-                    console.log(verif);
-                    console.log(boatAi);
+                   
                 } else 
                 {
+                    bonus = 1;
                     document.getElementById("cliquer" + hitPlayer).classList.add("miss");
                 }
                 if (touchPlayer.length == 17) 

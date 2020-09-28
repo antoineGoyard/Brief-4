@@ -12,3 +12,5 @@ let actualTurn = 0;
 let touchPlayer = [];
 let alreadyHitPlayer = [];
 let hitPlayer = 0; 
+let score; 
+let bonus;
