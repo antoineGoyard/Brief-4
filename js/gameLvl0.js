@@ -26,7 +26,12 @@ function gameLvl0() {
                     //console.log(verif);
                     //console.log(boatAi);
                     touchPlayer.push(hitPlayer);
-                    document.getElementById("cliquer" + hitPlayer).classList.add("hit");
+                    document.getElementById("cliquer" + hitPlayer).classList.add("carreExplosion");
+                    setTimeout(() => {
+                        document.getElementById("cliquer" + hitPlayer).classList.add("hit");
+                        document.getElementById("cliquer" + hitPlayer).classList.remove("carreExplosion");
+
+                    }, 2000);
                     verifCoule(boatAi,verif); 
                     //console.log(verif);
                     //console.log(boatAi);
@@ -50,7 +55,12 @@ function gameLvl0() {
                     verifCoule(boatPlayer,coup);
                     alreadyHitAi.push(coup);
                     touchAi.push(coup);
-                    document.getElementById(coup).classList.add("hit");
+                    document.getElementById(coup).classList.add("carreExplosion");
+                    setTimeout(() => {
+                        document.getElementById(coup).classList.add("hit");
+                        document.getElementById(coup).classList.remove("carreExplosion");
+                    }, 2000);
+                  
                 } else 
                 {
                     alreadyHitAi.push(coup);

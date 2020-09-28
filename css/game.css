@@ -421,3 +421,9 @@ video
     height: auto ;
     width: 80vw;
 }
+.carreExplosion
+{
+    background-image: url(../img/explosion.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
