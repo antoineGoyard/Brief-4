@@ -397,3 +397,7 @@ video
     margin-top: 4%;
     margin-left: 1%;;
 }
+#attendBoat {
+    width: 100vw;
+    height: 100vh;
+}
