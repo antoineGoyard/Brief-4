@@ -1,0 +1,11 @@
+#letableauP2, .uneligneP2, .battleCaseP2 
+{
+   padding: 10px;
+   border: 1px solid white;
+   border-collapse: collapse;
+   margin-right: 2vh;
+}
+.droppper
+{
+    border: 1px solid white;
+}
