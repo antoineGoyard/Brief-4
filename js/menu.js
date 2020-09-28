@@ -1,11 +1,4 @@
 //////////////// Function bouton du menu /////////////////
-// Variable des boutons
-
-/*let btnSolo = document.getElementById('');
-let btnDuo = document.getElementById('');
-let btnMulti = document.getElementById('');
-let btnScore = document.getElementById('');
-let btnOption = document.getElementById('');*/
 
 // Variable des sections
 let sectionPseudo = document.getElementById('sectionInscription')
@@ -20,8 +13,9 @@ let btnPlay = document.getElementById('play');
 let btnReturnMenu = document.getElementById('returnMenu');
 let btnDuoReturnMenu = document.getElementById('duoReturnMenu');
 let btnScoreReturnMenu = document.getElementById('scoreReturnMenu');
+let btnMultiReturnMenu = document.getElementById('multiReturnMenu');
 let btnJouerSolo = document.getElementById('btnJouerSolo');
-let btnJouerDuo = document.getElementById('btnJouerDuo')
+let btnJouerDuo = document.getElementById('btnJouerDuo');
 
 // Au click sur la page on cherche l'id de l'element.
 
@@ -71,7 +65,7 @@ addEventListener('click', (event) =>
         sectionOption.classList.add('hidden');
         sectionScore.classList.add('hidden');
         sectionPseudo.classList.add('hidden');
-        //sectionMulti.classList.add('hidden');
+        sectionMulti.classList.add('hidden');
         console.log('Click Btn Menu');
     }
     // Si il y a un clic ailleurs que sur un bouton
@@ -97,7 +91,7 @@ addEventListener('click', (event) =>
     sectionOption.classList.add('hidden');
     sectionScore.classList.add('hidden');
     sectionPseudo.classList.add('hidden')
-    //sectionMulti.classList.add('hidden');
+    sectionMulti.classList.add('hidden');
     console.log('Click Btn retour menu');
  })
  btnDuoReturnMenu.addEventListener('click',()=>{
@@ -106,7 +100,7 @@ addEventListener('click', (event) =>
     sectionOption.classList.add('hidden');
     sectionScore.classList.add('hidden');
     sectionPseudo.classList.add('hidden')
-    //sectionMulti.classList.add('hidden');
+    sectionMulti.classList.add('hidden');
     console.log('Click Btn retour menu');
  })
  btnScoreReturnMenu.addEventListener('click',()=>{
@@ -115,9 +109,18 @@ addEventListener('click', (event) =>
     sectionOption.classList.add('hidden');
     sectionScore.classList.add('hidden');
     sectionPseudo.classList.add('hidden')
-    //sectionMulti.classList.add('hidden');
+    sectionMulti.classList.add('hidden');
     console.log('Click Btn retour menu');
  })
+btnMultiReturnMenu.addEventListener('click',()=>{
+    sectionMenu.classList.remove('hidden');
+    sectionDuo.classList.add('hidden');
+    sectionOption.classList.add('hidden');
+    sectionScore.classList.add('hidden');
+    sectionPseudo.classList.add('hidden')
+    sectionMulti.classList.add('hidden');
+    console.log('Click Btn retour menu');
+})
  //boutons redirections
  btnJouerDuo.addEventListener('click',()=>{
     window.location = "modeDuo.html";
