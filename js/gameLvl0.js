@@ -47,7 +47,8 @@ function gameLvl0() {
                 }
 
 // AI TURN //
-
+                setTimeout(() => {
+                    
                 coup = 0;
                 //console.log(alreadyHitAi);
                 if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
@@ -72,6 +73,7 @@ function gameLvl0() {
                     //console.log('Victoire IA');
                     defeat();
                 }
+            }, 2000);
                 //console.log(alreadyHitAi);
             }
             else 

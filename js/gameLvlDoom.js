@@ -29,13 +29,14 @@ function gameLvlDoom() {
                 //console.log(verifBoat(verif, boatAi)); 
                 if (verifBoat(verif, boatAi) == true) 
                 {
-                   console.log(verif);
-                   console.log(boatAi);
                     touchPlayer.push(hitPlayer);
-                    document.getElementById("cliquer" + hitPlayer).classList.add("hit");
+                    document.getElementById("cliquer" + hitPlayer).classList.add("carreExplosion");
+                    setTimeout(() => {
+                        document.getElementById("cliquer" + hitPlayer).classList.add("hit");
+                        document.getElementById("cliquer" + hitPlayer).classList.remove("carreExplosion");
+
+                    }, 2000);
                     verifCoule(boatAi,verif); 
-                    console.log(verif);
-                    console.log(boatAi);
                 } else 
                 {
                     document.getElementById("cliquer" + hitPlayer).classList.add("miss");

@@ -24,7 +24,12 @@ function gameLvl2() {
                     bonus +=1;
                     score += (200*bonus);
                     touchPlayer.push(hitPlayer);
-                    document.getElementById("cliquer" + hitPlayer).classList.add("hit");
+                    document.getElementById("cliquer" + hitPlayer).classList.add("carreExplosion");
+                    setTimeout(() => {
+                        document.getElementById("cliquer" + hitPlayer).classList.add("hit");
+                        document.getElementById("cliquer" + hitPlayer).classList.remove("carreExplosion");
+
+                    }, 2000);
                     verifCoule(boatAi,verif); 
                   
                 } else 
