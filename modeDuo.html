@@ -2,29 +2,32 @@
 
 <head>
   <link rel="stylesheet" href="css/game.css">
+  <link rel="stylesheet" href="css/modeDuo.css">
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
 </head>
 
 <body>
-  <div id="title_game_player" class="title_game"> Placement de vos Bateaux</div>
-  <div id="title_game" class="title_game hidden"> A vous de Jouer</div>
-  <div id="title_game_ia" class="title_game hidden"> A l'ordinateur de jouer</div>
-  <div id="titre_placement" class='hidden'>Votre Placement</div>
 
   <!-- -->
-  <section id="section_player1">
+  <section id="title_player1">
 
+    <div class="title"> <span class="namePlayer1"></span> à toi de jouer !</div>
+    <button id="btn_gamep1" type="submit">Jouer</button>
+
+  </section>
+  <section id="section_player1">
+    <div div='placeP1'> Placement des bateaux de <span class="namePlayer1"></span></div>
 
     <div id="nomovegame" class="hidden"></div>
 
-    <div class="placementGame" id="placementGeneral">
+    <div class="placementGame" id="placementGeneralP1">
       <div id="game_board_mainP1">
       </div>
       <div id="game_board_main2P1">
       </div>
-      <button id="btn_btn1" class="fullbtn">Validation du Placement </button>
+      <button id="btn_btn1P1" class="fullbtn">Validation du Placement </button>
 
       <div id="score">
         <h3> Tour n° [N]</h3>
@@ -56,40 +59,46 @@
       <div id="bateauplacer" class="passagevertical">
 
 
-        <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1"
+        <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P1"
             src="./img/vaisseau1Bleu.png"></span>
 
-        <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2"
-            src="./img/vaisseau1Rouge.png"></span>
+        <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P1"
+            src="./img/vaisseau2Bleu.png"></span>
 
 
-        <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3"
-            src="./img/vaisseau1Bleu.png"></span>
+        <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P1"
+            src="./img/vaisseau3Bleu.png"></span>
 
-        <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4"
-            src="./img/vaisseau1Rouge.png"></span>
+        <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P1"
+            src="./img/vaisseau3Bleu.png"></span>
 
-        <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5"
-            src="./img/vaisseau1Bleu.png"></span>
+        <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P1"
+            src="./img/vaisseau3Bleu.png"></span>
 
 
       </div>
-      <button id="btn_btn2" class="fullbtn">Tourner vos Bateaux ?</button>
+      <button id="btn_btn2P1" class="fullbtn">Tourner vos Bateaux ?</button>
 
     </div>
   </section>
-
+<section id="title_player2">
+  
+  <div class="title"> <span class="namePlayer2"></span> à toi de jouer !</div>
+  <button id="btn_gamep2" type="submit">Jouer</button>
+    
+  </section>
 <section id="section_player2">
 
+  <div div='placeP2'> Placement des bateaux de <span class="namePlayer2"></span></div>
 
     <div id="nomovegame" class="hidden"></div>
 
-    <div class="placementGame" id="placementGeneral">
+    <div class="placementGame" id="placementGeneralP2">
       <div id="game_board_mainP2">
       </div>
       <div id="game_board_main2P2">
       </div>
-      <button id="btn_btn1" class="fullbtn">Validation du Placement </button>
+      <button id="btn_btn1P2" class="fullbtn">Validation du Placement </button>
 
       <div id="score">
         <h3> Tour n° [N]</h3>
@@ -120,33 +129,35 @@
       <div id="bateauplacer" class="passagevertical">
 
 
-        <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1"
-            src="./img/vaisseau1Bleu.png"></span>
-
-        <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2"
+        <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P2"
             src="./img/vaisseau1Rouge.png"></span>
 
+        <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P2"
+            src="./img/vaisseau2Rouge.png"></span>
 
-        <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3"
-            src="./img/vaisseau1Bleu.png"></span>
 
-        <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4"
-            src="./img/vaisseau1Rouge.png"></span>
+        <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P2"
+            src="./img/vaisseau3Rouge.png"></span>
 
-        <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5"
-            src="./img/vaisseau1Bleu.png"></span>
+        <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P2"
+            src="./img/vaisseau3Rouge.png"></span>
+
+        <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P2"
+            src="./img/vaisseau3Rouge.png"></span>
 
 
       </div>
-      <button id="btn_btn2" class="fullbtn">Tourner vos Bateaux ?</button>
+      <button id="btn_btn2P2" class="fullbtn">Tourner vos Bateaux ?</button>
 
     </div>
   </section>
 
-  <script src="js/test.js"></script>
+  <script src="js/modeDuo/duoGrille.js"></script>
   <script src="js/randomCoupIA.js"></script>
+  <script src="js/modeDuo/duoBoatTurn.js"></script>
   <script src="js/verifBoat.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/boatturn.js"></script>
+  <script src="js/draganddrop.js"></script>
 
 
 </body>
