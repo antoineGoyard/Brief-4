@@ -17,11 +17,31 @@ function verifCoule(tab,x)
         {
             if(tab[tampon][j] != null)
             {
-                alert("touché");
                return;
             }
         }
     tab[tampon] = [];
-    alert("touché coulé");
+    playVid();
     return;
 }
+
+var videoOver = document.getElementById("videoOverlay");
+var over = document.getElementById("overlayVideo");
+
+function playVid() 
+{
+  videoOver.classList.remove("hidden");
+  videoOver.classList.add("videoOverlay");
+  over.classList.remove("hidden");
+  over.classList.add("overlayVideo");
+  videoOver.play();
+  setTimeout(() => {
+    videoOver.classList.add("hidden");
+    videoOver.classList.remove("videoOverlay");
+    over.classList.add("hidden");
+    over.classList.remove("overlayVideo");
+  }, 4000);
+}
+
+
+

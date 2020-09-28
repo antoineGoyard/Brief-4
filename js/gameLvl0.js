@@ -23,7 +23,6 @@ function gameLvl0() {
                 {
                     bonus +=1;
                     score += (100*bonus);
-                    
                     //console.log(verif);
                     //console.log(boatAi);
                     touchPlayer.push(hitPlayer);
@@ -39,8 +38,6 @@ function gameLvl0() {
                 if (touchPlayer.length == 17) 
                 {
                     //console.log('Victoire Player');
-                    console.log("####################################");
-                    console.log(score);
                     winner();
                 }
 
