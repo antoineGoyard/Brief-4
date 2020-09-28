@@ -9,3 +9,401 @@
 {
     border: 1px solid white;
 }
+#section_player1
+{
+    display: flex;
+    flex-direction: column;
+}
+#section_player2
+{
+    display: flex;
+    flex-direction: column;
+}
+.elementPlacement
+{
+    display: flex;
+    flex-direction: row;
+}
+#placementGame
+{
+    display: flex;
+    flex-direction: column;
+}
+#boat-1P1.draggable.boatturn.affichageboatturn
+{
+    margin-top: 0%;
+   
+}
+#boat-1P1.draggable.boatturn.affichageboatturn
+{
+    margin-top: 0%;
+   
+}
+#boat-2P2.draggable.boatturn.affichageboatturn
+{
+    margin-top: 5%;
+   
+}
+#boat-2P1.draggable.boatturn.affichageboatturn
+{
+    margin-top: 5%;
+   
+}
+#boat-3P1.draggable.boatturn.affichageboatturn
+{
+    margin-top: 10%;
+   
+}
+#boat-3P2.draggable.boatturn.affichageboatturn
+{
+    margin-top: 10%;
+   
+}
+#boat-4P1.draggable.boatturn.affichageboatturn
+{
+    margin-top: 0%;
+   
+}
+#boat-4P2.draggable.boatturn.affichageboatturn
+{
+    margin-top: 0%;
+   
+}
+#boat-5P1.draggable.boatturn.affichageboatturn
+{
+    margin-top: 5%;
+   
+}
+#boat-5P2.draggable.boatturn.affichageboatturn
+{
+    margin-top: 5%;
+   
+}
+#boat-1P1.draggable.boatturn{
+    height: 7vh;
+    width: 35vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-1P2.draggable.boatturn{
+    height: 7vh;
+    width: 35vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-1P1.draggable.boatturn.ElementPlacer.passagesmallboat-1
+{
+    height: 5.25vh;
+    width: 26.25vh;
+    margin-top: -20px;
+     margin-left: -5vh;
+
+}
+#boat-1P2.draggable.boatturn.ElementPlacer.passagesmallboat-1
+{
+    height: 5.25vh;
+    width: 26.25vh;
+    margin-top: -20px;
+     margin-left: -5vh;
+
+}
+#boat-1P1{
+    width: 7vh;
+    height: 35vh;
+}
+#boat-1P2{
+    width: 7vh;
+    height: 35vh;
+}
+#boat-1P1.passagesmallboat-1
+{
+    width: 5.25vh;
+    height: 26.25vh;
+    margin-top: -20px;
+}
+#boat-1P2.passagesmallboat-1
+{
+    width: 5.25vh;
+    height: 26.25vh;
+    margin-top: -20px;
+}
+#boat-2P1.draggable.boatturn{
+    height: 7vh;
+    width: 28vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-2P2.draggable.boatturn{
+    height: 7vh;
+    width: 28vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-2P1.draggable.boatturn.ElementPlacer.passagesmallboat-2
+{
+    height: 5.25vh;
+    width: 21vh;
+     margin-top: -20px;
+     margin-left: -5vh;
+}
+#boat-2P2.draggable.boatturn.ElementPlacer.passagesmallboat-2
+{
+    height: 5.25vh;
+    width: 21vh;
+     margin-top: -20px;
+     margin-left: -5vh;
+}
+#boat-2P1{
+    width: 7vh;
+    height: 28vh;
+}
+#boat-2P2{
+    width: 7vh;
+    height: 28vh;
+}
+#boat-2P1.passagesmallboat-2{
+    width: 5.25vh;
+    height: 21vh;
+    
+}
+#boat-2P2.passagesmallboat-2{
+    width: 5.25vh;
+    height: 21vh;
+    
+}
+#boat-3P1.draggable.boatturn{
+    height: 7vh;
+    width: 21vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-3P2.draggable.boatturn{
+    height: 7vh;
+    width: 21vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-3P1.draggable.boatturn.ElementPlacer.passagesmallboat-3
+{
+    height: 5.25vh;
+    width: 15.75vh;
+     margin-top: -20px;
+     margin-left: -5vh;
+
+}
+#boat-3P2.draggable.boatturn.ElementPlacer.passagesmallboat-3
+{
+    height: 5.25vh;
+    width: 15.75vh;
+     margin-top: -20px;
+     margin-left: -5vh;
+
+}
+#boat-3P1{
+    width: 7vh;
+    height: 21vh;
+}
+#boat-3P2{
+    width: 7vh;
+    height: 21vh;
+}
+#boat-3P1.passagesmallboat-3{
+    width: 5.25vh;
+    height: 15.75vh;
+    
+}
+#boat-3P2.passagesmallboat-3{
+    width: 5.25vh;
+    height: 15.75vh;
+    
+}
+#boat-4P1.draggable.boatturn{
+    height: 7vh;
+    width: 21vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-4P2.draggable.boatturn{
+    height: 7vh;
+    width: 21vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-4P1.draggable.boatturn.ElementPlacer.passagesmallboat-4
+{
+    height: 5.25vh;
+    width: 15.75vh;
+     margin-top: -20px;
+     margin-left: -5vh;
+}
+#boat-4P2.draggable.boatturn.ElementPlacer.passagesmallboat-4
+{
+    height: 5.25vh;
+    width: 15.75vh;
+     margin-top: -20px;
+     margin-left: -5vh;
+}
+#boat-4P1{
+    width: 7vh;
+    height: 21vh;
+}
+#boat-4P2{
+    width: 7vh;
+    height: 21vh;
+}
+#boat-4P1.passagesmallboat-4{
+    width: 5.25vh;
+    height: 15.75vh;
+    
+}
+#boat-4P2.passagesmallboat-4{
+    width: 5.25vh;
+    height: 15.75vh;
+    
+}
+#boat-5P1.draggable.boatturn{
+    height: 7vh;
+    width: 14vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-5P2.draggable.boatturn{
+    height: 7vh;
+    width: 14vh;
+    margin-top: -30px;
+    margin-left: -40px;
+}
+#boat-5P1.draggable.boatturn.ElementPlacer.passagesmallboat-5
+{
+    height: 5.25vh;
+    width: 10.5vh;
+     margin-top: -20px;
+    margin-left: -5vh;
+}
+#boat-5P2.draggable.boatturn.ElementPlacer.passagesmallboat-5
+{
+    height: 5.25vh;
+    width: 10.5vh;
+     margin-top: -20px;
+    margin-left: -5vh;
+}
+#boat-5P1{
+    width: 7vh;
+    height: 14vh;
+}
+#boat-5P2{
+    width: 7vh;
+    height: 14vh;
+}
+#boat-5P1.passagesmallboat-5{
+    width: 5.25vh;
+    height: 10.5vh;   
+}
+#boat-5P2.passagesmallboat-5{
+    width: 5.25vh;
+    height: 10.5vh;   
+}
+.draggable
+{
+    
+    margin-top: -2vh;
+}
+.draggable.boatturn
+{
+    padding-left: 6vh;
+}
+
+.ElementPlacer
+{
+    position: absolute;
+}
+#bateauplacer
+{
+    margin-top: 5vh;
+    height: 31vh;
+}
+#letableau.changementplace
+{
+    width: 60vh;
+    height: 60vh;
+}
+#letableauvisible.changementplace
+{
+     width: 60vh;
+    height: 60vh;
+    
+}
+
+.placementGridSmall
+{
+    margin-left: 7vw;
+}
+#letableau
+{
+    position: absolute;
+}
+#letableauinvicibleP1
+{
+    position: absolute;
+}
+#letableauinvicibleP1, .uneligneinvicibleP1, .battleCaseinvicibleP1
+{
+   padding: 10px;
+   border: 1px solid white;
+   border-collapse: collapse;
+   margin-right: 2vh;
+}
+#letableauP2invicible
+{
+    position: absolute;
+}
+#letableauP2invicible, .uneligneP2invicible, .battleCaseP2invicible
+{
+   padding: 10px;
+   border: 1px solid white;
+   border-collapse: collapse;
+   margin-right: 2vh;
+}
+.placemeentGrille
+{
+    width: 45vw;
+    height: 45vw;
+}
+#game_board_mainP2
+{
+    position: absolute;
+}
+#title_player2
+{
+    width: 100vw;
+    height: 100vh;
+}
+.title
+{
+    margin-top: 50vh;
+}
+#title_player1
+{
+    width: 100vw;
+    height: 100vh;
+}
+#btn_gamep1
+{
+    margin-top: 5%;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    width: 15%;
+    height: 5%;
+    padding: 1%;
+}
+#btn_gamep2
+{
+    margin-top: 5%;
+    color: #FFFFFF;
+    background-color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    width: 15%;
+    height: 5%;
+    padding: 1%;
+}

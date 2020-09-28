@@ -20,19 +20,19 @@
   <section id="section_player1">
     <div div='placeP1'> Placement des bateaux de <span class="namePlayer1"></span></div>
 
+    <div class="elementPlacement">
     <div id="nomovegame" class="hidden"></div>
 
     <div class="placementGame" id="placementGeneralP1">
+      <div class="placemeentGrille">
       <div id="game_board_mainP1">
       </div>
       <div id="game_board_main2P1">
       </div>
+      </div>
       <button id="btn_btn1P1" class="fullbtn">Validation du Placement </button>
 
-      <div id="score">
-        <h3> Tour n° [N]</h3>
-        <h3>Votre score : [SCORE]</h3>
-      </div>
+      
     </div>
 
 
@@ -52,7 +52,7 @@
         </video>
       </div>
 
-      
+
 
 
 
@@ -80,76 +80,89 @@
       <button id="btn_btn2P1" class="fullbtn">Tourner vos Bateaux ?</button>
 
     </div>
-  </section>
-<section id="title_player2">
-  
-  <div class="title"> <span class="namePlayer2"></span> à toi de jouer !</div>
-  <button id="btn_gamep2" type="submit">Jouer</button>
-    
-  </section>
-<section id="section_player2">
-
-  <div div='placeP2'> Placement des bateaux de <span class="namePlayer2"></span></div>
-
-    <div id="nomovegame" class="hidden"></div>
-
-    <div class="placementGame" id="placementGeneralP2">
-      <div id="game_board_mainP2">
-      </div>
-      <div id="game_board_main2P2">
-      </div>
-      <button id="btn_btn1P2" class="fullbtn">Validation du Placement </button>
-
-      <div id="score">
+  </div>
+  </div>
+  <div id="score">
         <h3> Tour n° [N]</h3>
         <h3>Votre score : [SCORE]</h3>
       </div>
-    </div>
+  </section>
 
+  <section id="title_player2">
 
+    <div class="title"> <span class="namePlayer2"></span> à toi de jouer !</div>
+    <button id="btn_gamep2" type="submit">Jouer</button>
 
+  </section>
 
+  <section id="section_player2">
 
+    <div div='placeP2'> Placement des bateaux de <span class="namePlayer2"></span></div>
+    <div class="elementPlacement">
+      <div id="nomovegame" class="hidden"></div>
 
+      <div class="placementGame" id="placementGeneralP2">
 
+        <div class="placemeentGrille">
+        <div id="game_board_mainP2">
+        </div>
+        <div id="game_board_main2P2">
+        </div>
+        </div>
+        <button id="btn_btn1P2" class="fullbtn">Validation du Placement </button>
 
-    <div id="placementexplication">
-
-      <div id="explicationGame" class="explication">
-        <video id="video" autoplay="true" muted loop="true" controls>
-          <source src="img/explication.mp4" type="video/mp4">
-          <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
-          </p>
-        </video>
+        
       </div>
 
-     
 
 
-      <div id="bateauplacer" class="passagevertical">
 
 
-        <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P2"
-            src="./img/vaisseau1Rouge.png"></span>
-
-        <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P2"
-            src="./img/vaisseau2Rouge.png"></span>
 
 
-        <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P2"
-            src="./img/vaisseau3Rouge.png"></span>
 
-        <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P2"
-            src="./img/vaisseau3Rouge.png"></span>
+      <div id="placementexplication">
 
-        <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P2"
-            src="./img/vaisseau3Rouge.png"></span>
+        <div id="explicationGame" class="explication">
+          <video id="video" autoplay="true" muted loop="true" controls>
+            <source src="img/explication.mp4" type="video/mp4">
+            <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+            </p>
+          </video>
+        </div>
 
+
+
+
+        <div id="bateauplacer" class="passagevertical">
+
+
+          <span class="placement" id="2000"><img class="draggable bateaunoturn" draggable="true" id="boat-1P2"
+              src="./img/vaisseau1Rouge.png"></span>
+
+          <span class="placement" id="2001"><img class="draggable bateaunoturn" draggable="true" id="boat-2P2"
+              src="./img/vaisseau2Rouge.png"></span>
+
+
+          <span class="placement" id="2002"><img class="draggable bateaunoturn" draggable="true" id="boat-3P2"
+              src="./img/vaisseau3Rouge.png"></span>
+
+          <span class="placement" id="2003"><img class="draggable bateaunoturn" draggable="true" id="boat-4P2"
+              src="./img/vaisseau3Rouge.png"></span>
+
+          <span class="placement" id="2004"><img class="draggable bateaunoturn" draggable="true" id="boat-5P2"
+              src="./img/vaisseau3Rouge.png"></span>
+
+
+        </div>
+        <button id="btn_btn2P2" class="fullbtn">Tourner vos Bateaux ?</button>
 
       </div>
-      <button id="btn_btn2P2" class="fullbtn">Tourner vos Bateaux ?</button>
-
     </div>
+    <div id="score">
+          <h3> Tour n° [N]</h3>
+          <h3>Votre score : [SCORE]</h3>
+        </div>
   </section>
 
   <script src="js/modeDuo/duoGrille.js"></script>
