@@ -1,4 +1,7 @@
-
+html
+{
+    font-size: 18px;
+}
 /*-------------------------------------------------main------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
 body{
@@ -19,7 +22,7 @@ section {
     display: none;
 }
 h1 {
-    font-size: 50px;
+    font-size: 3rem;
     padding-top: 8%;
 }
 h1,h2 {
@@ -33,11 +36,11 @@ input {
     background-color: #000000;
     color: #FFFFFF;
     font-family:'Press Start 2P' , cursive ;
-    font-size: 16px;
+    font-size: 1rem;
     
 }
 label {
-    font-size: 11px;
+    font-size: 0.75rem;
     margin: 10%;
 }
 form {
@@ -64,7 +67,7 @@ form {
     top: 5px;
     left: 1%;
     color: #FFFFFF;
-    font-size: 26px;
+    font-size: 1.5rem;
 }
 /*---------------------------------------------bouton--------------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
@@ -110,7 +113,7 @@ form {
     color: #FFFFFF;
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+    font-size: 0.7rem;
     margin-top: 4%;
     margin-left: 1%;;
 }
@@ -130,7 +133,7 @@ form {
     justify-content: space-evenly;
 }
 .containerInscription h1{
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 .containerInscription input {
     width: 100%;
@@ -197,13 +200,13 @@ form {
     border: 1px solid #413f3faf;
     width: 30%;
     height: 70%;
-    margin: 35px auto 0 auto;
+    margin: 2rem auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .containerSolo h1,h2 {
-    font-size: 18px;
+    font-size: 1rem;
 }
 .checkbox {
     display: flex;
@@ -248,7 +251,7 @@ form {
     height: 30%;
     margin-top: 4%;
 }.menuDuo label {
-    font-size:18px;
+    font-size:1rem;
 }
 /*---------------------------------------------------score---------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
@@ -293,7 +296,7 @@ form {
     color: #FFFFFF;
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
-    font-size: 8px;
+    font-size: 0.5rem;
 }
 .labelOptions {
     text-align: center;
@@ -307,3 +310,45 @@ form {
 }
 /*-------------------------------------------------multi-joueurs--------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 900px) {
+    html 
+    {
+        font-size: 14px;
+    }
+    .containerInscription 
+    {
+        width: 90%;
+        height: 50%;
+    }
+    .btnBtnBar
+    {
+        width:30%;
+    }
+    .containerMenu
+    {
+        width: 80%;
+    }
+    .containerSolo
+    {
+        width: 80%;
+       margin-top: 10vh;
+    }
+    input
+    {
+        height: 5vh !important ;
+        font-size: 1rem;
+    }
+    .return
+    {
+        width: 20%;
+        height: 5%;
+        position: absolute;
+        top: 0;
+        right: 1vw;
+    }
+    .formDuo
+    {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

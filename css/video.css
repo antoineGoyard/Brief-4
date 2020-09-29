@@ -1,3 +1,6 @@
+html{
+    font-size: 18px;;
+}
 body {
     font-family: 'Press Start 2P', cursive;
     overflow: hidden;
@@ -52,7 +55,20 @@ video{
     border: 1px solid #e0d4d477;
     bottom: 10px;
     right: 10px;
-    width: 10%;
+    width: 15%;
     height: 7%;
     z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+    html 
+    {
+        font-size: 12px;
+    }
+    #modale 
+    {
+        width: 60vw;
+        height: 30vh;
+    }
+    .button
 }
