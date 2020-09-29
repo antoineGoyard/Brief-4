@@ -11,6 +11,14 @@ body
     color: white;
     font-size: 5vh;
 }
+.sound {
+    position: absolute;
+    background-color:  #000000;
+    border :1px solid black;
+    margin: 10px auto;
+    color: #FFFFFF;
+    font-size: 26px;
+}
 .hidden
 {
     display: none;
@@ -448,15 +456,7 @@ video
     background-position: center;
 }
 
-.waitDude
-{
-   
-    position: absolute;
-    background: rgba(0, 0, 0, 0); 
-    z-index: 4;
-    width: 100vw;
-    height: 90vh;    
-}
+
 .overlayAi
 {
     position: absolute;
@@ -466,8 +466,7 @@ video
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: rgba(27, 26, 26, 0.521);
-}
+    background: radial-gradient(circle, rgba(0,0,0,1) 26%, rgba(55,58,102,1) 47%, rgba(132,87,106,1) 62%, rgba(206,159,209,0.8953782196472339) 100%);}
 
 .overlayAi p 
 {
