@@ -30,7 +30,7 @@ function verifCoule(tab,x)
     }
     return;
 }
-
+var jouerGuerreSalsifi = document.getElementById("title_game");
 var videoOverR = document.getElementById("videoOverlayR");
 var overR = document.getElementById("overlayVideoR");
 var videoOverE = document.getElementById("videoOverlayE");
@@ -38,12 +38,16 @@ var overE = document.getElementById("overlayVideoE");
 
 function playVidR() 
 {
+    jouerGuerreSalsifi.classList.add("hidden");
+    jouerGuerreSalsifi.classList.remove("title_game");
   videoOverR.classList.remove("hidden");
   videoOverR.classList.add("videoOverlayR");
   overR.classList.remove("hidden");
   overR.classList.add("overlayVideoR");
   videoOverR.play();
   setTimeout(() => {
+    jouerGuerreSalsifi.classList.remove("hidden");
+    jouerGuerreSalsifi.classList.add("title_game");
     videoOverR.classList.add("hidden");
     videoOverR.classList.remove("videoOverlayR");
     overR.classList.add("hidden");
@@ -53,12 +57,14 @@ function playVidR()
 
 function playVidE() 
 {
+    jouerGuerreSalsifi.classList.add("hidden");
   videoOverE.classList.remove("hidden");
   videoOverE.classList.add("videoOverlayE");
   overE.classList.remove("hidden");
   overE.classList.add("overlayVideoE");
   videoOverE.play();
   setTimeout(() => {
+    jouerGuerreSalsifi.classList.remove("hidden");
     videoOverE.classList.add("hidden");
     videoOverE.classList.remove("videoOverlayE");
     overE.classList.add("hidden");
