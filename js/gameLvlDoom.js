@@ -15,6 +15,14 @@ function gameLvlDoom() {
         actualTurn++;
         
 // PLAYER TURN //
+            if (people == 'republique') 
+            {
+                peupleChoix = 0;
+            }else
+            {
+                peupleChoix = 1;
+            }
+
 
             //console.log(event.target.id);
             if (event.target.id < 4000) 
@@ -51,6 +59,13 @@ function gameLvlDoom() {
 // AI TURN //
 
             console.log(alreadyHitAi);
+            if (people == 'republique') 
+            {
+                peupleChoix = 1;
+            }else
+            {
+                peupleChoix = 0;
+            }
 
             // Ai 
             if (verifBoat(tabDoom[indexDoom], boatPlayer) == true) {
