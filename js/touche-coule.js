@@ -36,7 +36,7 @@ var overR = document.getElementById("overlayVideoR");
 var videoOverE = document.getElementById("videoOverlayE");
 var overE = document.getElementById("overlayVideoE");
 var loadAI = document.getElementById("overlayAi");
-var fake = document.getElementById("fakeDive");
+var fake = document.getElementById("fakeDiv");
 
 function playVidR() 
 {
@@ -83,23 +83,23 @@ function playVidE()
 function load()
 {
  
-
   fake.classList.remove("hidden");
-  fake.classList.add("waitDude");
+  fake.classList.add("fake");
   setTimeout(() =>
    {
     setTimeout(() => {
-      jouerGuerreSalsifi.classList.remove("hidden");
-      jouerGuerreSalsifi.classList.add("title_game");
      
+      jouerGuerreSalsifi.classList.remove("hidden");
+  jouerGuerreSalsifi.classList.add("title_game");
       loadAI.classList.remove("overlayAi");
       loadAI.classList.add("hidden");
     }, 2000);
+   
+
     jouerGuerreSalsifi.classList.add("hidden");
     jouerGuerreSalsifi.classList.remove("title_game");
-  
     fake.classList.add("hidden");
-    fake.classList.remove("waitDude");
+    fake.classList.remove("fake");
     loadAI.classList.add("overlayAi");
     loadAI.classList.remove("hidden");
    
