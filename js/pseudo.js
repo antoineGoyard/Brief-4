@@ -1,13 +1,9 @@
 let btnLogin = document.getElementById('btnMenu');
 let score = document.getElementById('score');
-let pseudoPlayerOne; //= document.getElementById('pseudoInscription').value;
+let pseudoPlayerOne;
 let pseudoPlayerTwo;
 let inputPseudo = document.getElementById('pseudoInscription');
 
-// function setUserPseudoPlayerOne() {
-//   pseudoPlayerOne = localStorage.setItem('pseudoPlayerOne', storedPseudoPlayerOne);
-//   console.log("test local");
-// }
 
 btnLogin.addEventListener('click', () => {
   console.log("ok");
@@ -17,16 +13,20 @@ btnLogin.addEventListener('click', () => {
 validateForm();
 });
 
-inputPseudo.addEventListener('keypress',()=>{
-  var e=window.event || e;
-var touche=e.charCode || e.keyCode;
-if(touche==13){
-
-  pseudoPlayerOne = document.getElementById('pseudoInscription').value;
-  localStorage.setItem('pseudoPlayerOne', pseudoPlayerOne); 
-     validateForm();   
-        console.log('Click Btn Menu');
-}})
+// ifinputPseudo.addEventListener('keypress',()=>{
+//   var e=window.event || e;
+//   var touche=e.charCode || e.keyCode;
+// if(touche==13){
+//   pseudoPlayerOne = document.getElementById('pseudoInscription').value;
+//   localStorage.setItem('pseudoPlayerOne', pseudoPlayerOne); 
+//     console.log("ca marche");
+//     sectionMenu.classList.remove('hidden');
+//     sectionPseudo.classList.add('hidden');
+//     sectionOption.classList.add('hidden');
+//     sectionScore.classList.add('hidden');
+//     sectionMulti.classList.add('hidden');
+//         console.log('Click Btn Menu');
+// }})
 
 function validateForm() {
   let x = document.forms["logginForm"]["pseudo"].value;
@@ -71,10 +71,3 @@ function validateFormDuo() {
    window.location = "modeDuo.html";
 
 }}
-
-// function setUserPseudoPlayerTwo() {
-  
-//   pseudoPlayerTwo = document.getElementById('pseudoPlayerTwo').value;
-//   localStorage.setItem('pseudoPlayerTwo', pseudoPlayerTwo);
-//   console.log(pseudoPlayerTwo.pseudo);
-// }
