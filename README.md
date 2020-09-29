@@ -22,3 +22,8 @@ the use of our games requires at least a local server in order to have the score
 
 Model/wireframe:
 https://www.figma.com/file/wpYbzIRzlRrhwy76gaAUkI/brief-4?node-id=11%3A561
+
+Appreciation:
+
+A big thank you for our exceptional voice actors.#C&E
+A big thank you for our Dj ZYAD.

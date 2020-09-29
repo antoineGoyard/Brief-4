@@ -13,8 +13,8 @@ body
 }
 .sound {
     position: absolute;
-    right: 5vw;
-    top: 55vh;
+    left: 1%;
+    top: 1%;
     background-color:  #000000;
     border :1px solid black;
     color: #FFFFFF;
