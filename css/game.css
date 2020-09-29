@@ -401,15 +401,35 @@ video
     width: 100vw;
     height: 100vh;
 }
-.overlayVideo
+.overlayVideoR
 {
     position: absolute;
-    background: radial-gradient(circle, rgba(18,31,48,1) 0%, rgba(117,14,105,1) 61%, rgba(14,99,117,1) 97%);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(168,156,158,1) 100%); 
     z-index: 4;
     width: 100vw;
     height: 100vh;    
 }
-.videoOverlay
+.videoOverlayR
+{
+    z-index: 4;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto ;
+    width: 80vw;
+}
+.overlayVideoE
+{
+    position: absolute;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(207,29,29,1) 100%); 
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;    
+}
+.videoOverlayE
 {
     z-index: 4;
     position: absolute;

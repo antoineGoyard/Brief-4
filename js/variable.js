@@ -13,6 +13,7 @@ let boat5 = document.getElementById('boat-5');
 
 var difficult1 = localStorage.getItem("difficult");
 var people = localStorage.getItem("people");
+var peupleChoix;
 
 
 

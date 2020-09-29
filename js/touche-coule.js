@@ -21,25 +21,48 @@ function verifCoule(tab,x)
             }
         }
     tab[tampon] = [];
-    playVid();
+    if (peupleChoix == 0)
+    {
+        playVidR();
+    }else
+    {
+        playVidE();
+    }
     return;
 }
 
-var videoOver = document.getElementById("videoOverlay");
-var over = document.getElementById("overlayVideo");
+var videoOverR = document.getElementById("videoOverlayR");
+var overR = document.getElementById("overlayVideoR");
+var videoOverE = document.getElementById("videoOverlayE");
+var overE = document.getElementById("overlayVideoE");
 
-function playVid() 
+function playVidR() 
 {
-  videoOver.classList.remove("hidden");
-  videoOver.classList.add("videoOverlay");
-  over.classList.remove("hidden");
-  over.classList.add("overlayVideo");
-  videoOver.play();
+  videoOverR.classList.remove("hidden");
+  videoOverR.classList.add("videoOverlayR");
+  overR.classList.remove("hidden");
+  overR.classList.add("overlayVideoR");
+  videoOverR.play();
   setTimeout(() => {
-    videoOver.classList.add("hidden");
-    videoOver.classList.remove("videoOverlay");
-    over.classList.add("hidden");
-    over.classList.remove("overlayVideo");
+    videoOverR.classList.add("hidden");
+    videoOverR.classList.remove("videoOverlayR");
+    overR.classList.add("hidden");
+    overR.classList.remove("overlayVideoR");
+  }, 4000);
+}
+
+function playVidE() 
+{
+  videoOverE.classList.remove("hidden");
+  videoOverE.classList.add("videoOverlayE");
+  overE.classList.remove("hidden");
+  overE.classList.add("overlayVideoE");
+  videoOverE.play();
+  setTimeout(() => {
+    videoOverE.classList.add("hidden");
+    videoOverE.classList.remove("videoOverlayE");
+    overE.classList.add("hidden");
+    overE.classList.remove("overlayVideoE");
   }, 4000);
 }
 

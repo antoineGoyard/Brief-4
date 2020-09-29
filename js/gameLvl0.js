@@ -11,6 +11,14 @@ function gameLvl0() {
             //console.log(event.target.id);
             if (event.target.id < 4000) 
             { 
+                if (people == 'republique') 
+                {
+                    peupleChoix = 0;
+                }else
+                {
+                    peupleChoix = 1;
+                }
+
                 hitPlayer = event.target.id;
                 document.getElementById(hitPlayer).id = "cliquer" + hitPlayer;
                 //console.log(hitPlayer);
@@ -48,6 +56,13 @@ function gameLvl0() {
 
 // AI TURN //
                 setTimeout(() => {
+                 if (people == 'republique') 
+                {
+                    peupleChoix = 1;
+                }else
+                {
+                    peupleChoix = 0;
+                }
                     
                 coup = 0;
                 //console.log(alreadyHitAi);
