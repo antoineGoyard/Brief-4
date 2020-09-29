@@ -17,6 +17,7 @@ else if(people == 'empire')
     document.getElementById('boat-3').setAttribute('src', './img/vaisseau3Rouge.png');
     document.getElementById('boat-4').setAttribute('src', './img/vaisseau3Rouge.png');
     document.getElementById('boat-5').setAttribute('src', './img/vaisseau3Rouge.png');
+    document.getElementById('video').setAttribute('src', './img/explicationempire.mp4');
 }
 else 
 {
