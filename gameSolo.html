@@ -6,6 +6,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/0b93042111.js" crossorigin="anonymous"></script>
+
 
   
   <link rel="stylesheet" href="css/game.css">
@@ -13,15 +15,18 @@
 </head>
 
 <body>
+  <button class="sound" id="play">
+    <i class="fas fa-volume-up"></i>
+</button>
+<button class="hidden" id="muted"><i class="fas fa-volume-mute"></i></button>
   <!-- Titre des différentes phases de jeux -->
   <div id="title_game_player" class="title_game"> Placement de vos Bateaux</div>
   <div id="title_game" class="title_game hidden"> A vous de Jouer</div>
   <div id="title_game_ia" class="title_game hidden"> A l'ordinateur de jouer</div>
   <div id="titre_placement" class='hidden'>Votre Placement</div>
-
+  
   <!-- -->
   <section id="section_game">
-
 
     <div id="nomovegame" class="hidden"></div>
     <!-- Placement des grilles -->
@@ -82,22 +87,19 @@
       <button id="btn_btn2" class="fullbtn">Tourner vos Bateaux ?</button>
 
     </div>
-    <div id="overlayVideoR"  class="hidden">
+    <div id="overlayVideoR"  classe="hidden">
       <video id="videoOverlayR" class="hidden" >
           <source src="img/ModaleTirBleu.mp4" type="video/mp4">
       </video>
   </div>
-  <div id="overlayVideoE"  class="hidden">
+  <div id="overlayVideoE"  classe="hidden">
     <video id="videoOverlayE" class="hidden" >
         <source src="img/ModaleTirRouge.mp4" type="video/mp4">
     </video>
 </div>
 <div id="overlayAi" class="hidden">
   <p> L'IA réfléchit </p>
-  <img  id="loadAi" src="img/load.gif">
-</div>
-<div id="fakeDive" class="hidden">
-
+  <img  id="loadAi" class="loadAi" src="img/load.gif">
 </div>
   
   </section>
