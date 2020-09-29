@@ -24,5 +24,5 @@ Model/wireframe:
 https://www.figma.com/file/wpYbzIRzlRrhwy76gaAUkI/brief-4?node-id=11%3A561
 
 Appreciation:
-
-A big thank you for our exceptional voice actors#C&E and a big thank you for our Dj ZYAD.
+thank you for our exceptional voice actors.
+thank you for our Dj ZYAD.
