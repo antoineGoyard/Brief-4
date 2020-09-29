@@ -3,6 +3,7 @@ localStorage.setItem('iconeSon', iconeSon);
 let iconeMute = document.getElementById('muted');
 localStorage.setItem('iconeMute', iconeMute);
 let playerAudio = document.getElementById('audioAccueil');
+localStorage.setItem('playerAudio', playerAudio);
 
 iconeSon.addEventListener('click',()=>{
     iconeSon.classList.add('hidden');

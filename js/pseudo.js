@@ -2,7 +2,7 @@ let btnLogin = document.getElementById('btnMenu');
 let score = document.getElementById('score');
 let pseudoPlayerOne; //= document.getElementById('pseudoInscription').value;
 let pseudoPlayerTwo;
-
+let inputPseudo = document.getElementById('pseudoInscription');
 
 // function setUserPseudoPlayerOne() {
 //   pseudoPlayerOne = localStorage.setItem('pseudoPlayerOne', storedPseudoPlayerOne);
@@ -11,12 +11,22 @@ let pseudoPlayerTwo;
 
 btnLogin.addEventListener('click', () => {
   console.log("ok");
-  validateForm();
+  
   pseudoPlayerOne = document.getElementById('pseudoInscription').value;
   localStorage.setItem('pseudoPlayerOne', pseudoPlayerOne);
-  console.log(pseudoPlayerOne);
-
+validateForm();
 });
+
+inputPseudo.addEventListener('keypress',()=>{
+  var e=window.event || e;
+var touche=e.charCode || e.keyCode;
+if(touche==13){
+
+  pseudoPlayerOne = document.getElementById('pseudoInscription').value;
+  localStorage.setItem('pseudoPlayerOne', pseudoPlayerOne); 
+     validateForm();   
+        console.log('Click Btn Menu');
+}})
 
 function validateForm() {
   let x = document.forms["logginForm"]["pseudo"].value;

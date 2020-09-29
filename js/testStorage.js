@@ -8,21 +8,23 @@
     let storedMusicOff = localStorage.getItem('musicOff');
     let storedIconeSon = localStorage.getItem('iconeSon');
     let storedIconeMute = localStorage.getItem('iconeMute');
-  
-// function getPseudoPlayerOne() {
-//     let storedpseudoPlayerOne = localStorage.getItem ('pseudo');
-   
-//   }
-  
-storedMusicOn.addEventListener('click',()=>{
-  playerAudio.muted = false;
-  storedIconeMute.classList.add('hidden');
-  storedIconeSon.classList.remove('hidden');
-  storedIconeSon.classList.add('sound');
+    let storedPlayerAudio = localStorage.getItem('playerAudio');
+   // let playerAudioGame = document.getElementById('audioGame');
+    let iconeSonGame = document.getElementById('play');
+    let iconeMuteGame = document.getElementById('muted');
+
+
+
+iconeSonGame.addEventListener('click',()=>{
+ // playerAudioGame.muted = true;
+  iconeMuteGame.classList.remove('hidden');
+  iconeMuteGame.classList.add('sound');
+  iconeSonGame.classList.add('hidden');
+
 })
-storedMusicOff.addEventListener('click',()=>{
-  playerAudio.muted = true;
-  storedIconeSon.classList.add('hidden');
-  storedIconeMute.classList.remove('hidden');
-  storedIconeMute.classList.add('sound');
+iconeMuteGame.addEventListener('click',()=>{
+  playerAudioGame.muted = false;
+  iconeSonGame.classList.remove('hidden');
+  iconeSonGame.classList.add('sound');
+  iconeMuteGame.classList.add('hidden');
 })
