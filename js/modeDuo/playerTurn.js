@@ -7,10 +7,15 @@ var btnGoP2 = document.getElementById('btn_gamep2');
 var touchPlayer = [];
 var boatPlayer2 = new Array;
 
-var playerwinner;
 
-var player1 = "Roger";
-var player2 = "Bernadette";
+
+    let PseudoPlayerOne = localStorage.getItem('pseudoPlayerOne');
+    console.log(PseudoPlayerOne);
+    let PseudoPlayerTwo = localStorage.getItem('pseudoPlayerTwo');
+    console.log(PseudoPlayerTwo);
+
+var player1 = PseudoPlayerOne;
+var player2 = PseudoPlayerTwo;
 
 document.getElementById('namePlayer1').append(player1);
 document.getElementById('namePlayer11').append(player1);
@@ -293,6 +298,7 @@ btn_btn1P2.addEventListener('click', () => {
         document.getElementById('title2P1').classList.add('hidden');
         document.getElementById('title1P2').classList.remove('hidden');
         document.getElementById('title2P2').classList.add('hidden');
+        document.getElementById('section_hidden_P2').classList.add('hidden');
     }
 })
 
@@ -358,7 +364,12 @@ document.getElementById('boardP1').addEventListener('click', (event) => {
         if (touchPlayer.length == 17) {
 
             console.log('Victoire Player');
-            playerwinner = "Player 1"
+            
+            var playerwinner = player1;
+            document.getElementById('winner').append(playerwinner);
+
+            document.getElementById('playP1').classList.add('hidden');
+            document.getElementById('sectionVictoireDuo').classList.remove('hidden');
 
         }
 
@@ -366,6 +377,7 @@ document.getElementById('boardP1').addEventListener('click', (event) => {
             document.getElementById('title_player2').classList.remove('hidden');
             document.getElementById('playP1').classList.add('hidden');
             document.getElementById('btn_gamep12').classList.remove('hidden');
+            
             console.log('tt');
         }, 200);
     }
@@ -399,7 +411,10 @@ document.getElementById('boardP2').addEventListener('click', (event) => {
         if (touchPlayer.length == 17) {
 
             console.log('Victoire Player2');
-            playerwinner = "Player 2"
+             let playerwinner = player2
+            document.getElementById('winner').append(playerwinner);
+            document.getElementById('playP2').classList.add('hidden');
+            document.getElementById('sectionVictoireDuo').classList.remove('hidden');
 
         }
 
@@ -419,10 +434,12 @@ document.getElementById('btn_btn2P2').addEventListener('click', () =>
 {
     document.getElementById("playP2").classList.remove('hidden');
     document.getElementById('title_player2').classList.add('hidden');
+    document.getElementById('section_hidden_P2').classList.add('hidden');
 })
 
 document.getElementById('btn_gamep12').addEventListener('click', () =>
 {
     document.getElementById("playP1").classList.remove('hidden');
     document.getElementById('title_player1').classList.add('hidden');
+    document.getElementById('section_hidden_P2').classList.add('hidden');
 })
