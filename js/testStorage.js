@@ -27,15 +27,16 @@ iconeSonGame.addEventListener('click',()=>{
   iconeSonGame.classList.add('sound');
   iconeMuteGame.classList.add('hidden');
 })
-window.onload = function(){
-  setTimeout(function(){
-    console.log("Hello");
-    playerAudioGame.play();
-}, 10000);
-};
-iconeSonGame.addEventListener('click',()=>{
-  playerAudioGame.muted = true;
-})
-iconeMuteGame.addEventListener('click',()=>{
-  playerAudioGame.muted = false;
-})
+// window.onload();
+//   setTimeout(function(){
+//     console.log("Hello");
+//     playerAudioGame.play();
+// }, 10000);
+// ;
+
+// iconeSonGame.addEventListener('click',()=>{
+//   playerAudioGame.muted = true;
+// })
+// iconeMuteGame.addEventListener('click',()=>{
+//   playerAudioGame.muted = false;
+// })
