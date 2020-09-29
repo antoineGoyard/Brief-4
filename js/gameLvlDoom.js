@@ -61,7 +61,7 @@ function gameLvlDoom() {
             load();
             setTimeout(() => {
                 
-            console.log(alreadyHitAi);
+            //console.log(alreadyHitAi);
             if (people == 'republique') 
             {
                 peupleChoix = 1;
@@ -80,12 +80,12 @@ function gameLvlDoom() {
                 indexDoom++;
             } else {
                 alreadyHitAi.push(coup);
-                console.log(coup);
+                //console.log(coup);
                 document.getElementById(coup).classList.add("miss");
             }
 
             if (touchAi.length == 17) {
-                console.log('Victoire IA');
+               // console.log('Victoire IA');
                 defeat();
             }
         }, 4000);

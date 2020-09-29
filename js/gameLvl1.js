@@ -75,7 +75,7 @@ function gameLvl1() {
                     document.getElementById(coup).classList.add("hit");
                 } else {
                     alreadyHitAi.push(coup);
-                    console.log(coup);
+                   // console.log(coup);
                     document.getElementById(coup).classList.add("miss");
                 }
             }
@@ -84,7 +84,7 @@ function gameLvl1() {
                 defeat();
             }
 
-            console.log(alreadyHitAi);
+            //console.log(alreadyHitAi);
         }, 4000);
         }
         else {
