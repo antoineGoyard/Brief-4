@@ -1,6 +1,6 @@
 
 /* Get the documentElement (<html>) to display the page in fullscreen */
-var elem = document.documentElement;
+let elem = document.documentElement;
 
 /* View in fullscreen */
 function openFullscreen() {
@@ -27,17 +27,19 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
-var fullscreen = document.getElementById('fullscreen');
+let fullscreen = document.getElementById('fullscreen');
 fullscreen.addEventListener('click',()=>{
     openFullscreen();
 })
 /**
  * Music and sound management
  */
-var musicOn = document.getElementById('musicOn');
-var musicOff = document.getElementById('musicOff');
-var soundOn = document.getElementById('soundOn');
-var soundOff = document.getElementById('soundOff');
+let musicOn = document.getElementById('musicOn');
+localStorage.setItem('musicOn', musicOn);
+let musicOff = document.getElementById('musicOff');
+localStorage.setItem('musicOff', musicOff);
+let soundOn = document.getElementById('soundOn');
+let soundOff = document.getElementById('soundOff');
 
 
 musicOn.addEventListener('click',()=>{

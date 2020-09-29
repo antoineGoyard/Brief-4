@@ -1,5 +1,7 @@
 let iconeSon = document.getElementById('play');
+localStorage.setItem('iconeSon', iconeSon);
 let iconeMute = document.getElementById('muted');
+localStorage.setItem('iconeMute', iconeMute);
 let playerAudio = document.getElementById('audioAccueil');
 
 iconeSon.addEventListener('click',()=>{

@@ -20,7 +20,7 @@ let btnJouerDuo = document.getElementById('btnJouerDuo');
 // Au click sur la page on cherche l'id de l'element.
 
 
-addEventListener('click', (event) =>
+addEventListener('click', () =>
 {
     //Bouton vers Solo
     if( event.target.id == "btnSolo")
