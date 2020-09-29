@@ -53,6 +53,9 @@ function gameLvl2() {
 
 // AI TURN //
             //AI
+            load();
+            setTimeout(() => {
+                
             if (people == 'republique') 
             {
                 peupleChoix = 1;
@@ -83,7 +86,7 @@ function gameLvl2() {
                 console.log('Victoire IA');
                 defeat()
             }
-
+        }, 4000);
         }
         else {
             alert('Vous avez déjà tiré a cet endroit !')

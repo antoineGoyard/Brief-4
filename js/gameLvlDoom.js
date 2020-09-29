@@ -57,7 +57,10 @@ function gameLvlDoom() {
                 }
 
 // AI TURN //
-
+            
+            load();
+            setTimeout(() => {
+                
             console.log(alreadyHitAi);
             if (people == 'republique') 
             {
@@ -85,7 +88,7 @@ function gameLvlDoom() {
                 console.log('Victoire IA');
                 defeat();
             }
-
+        }, 4000);
         }
         else {
             alert('Vous avez déjà tiré a cet endroit !')

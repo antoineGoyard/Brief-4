@@ -52,6 +52,10 @@ function gameLvl1() {
 
 // AI TURN //
             //AI
+
+            load();
+            setTimeout(() => {
+                
             if (people == 'republique') 
             {
                 peupleChoix = 1;
@@ -81,6 +85,7 @@ function gameLvl1() {
             }
 
             console.log(alreadyHitAi);
+        }, 4000);
         }
         else {
             alert('Vous avez déjà tiré a cet endroit !')
