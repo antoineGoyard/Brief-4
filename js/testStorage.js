@@ -9,8 +9,8 @@
     let storedIconeSon = localStorage.getItem('iconeSon');
     let storedIconeMute = localStorage.getItem('iconeMute');
     let storedPlayerAudio = localStorage.getItem('playerAudio');
+    let playerAudioGame = document.getElementById('audioGame');
    
-    let playerAudioGame = storedPlayerAudio;
     let iconeSonGame = document.getElementById('play');
     let iconeMuteGame = document.getElementById('muted');
 
@@ -27,9 +27,15 @@ iconeSonGame.addEventListener('click',()=>{
   iconeSonGame.classList.add('sound');
   iconeMuteGame.classList.add('hidden');
 })
-iconeSon.addEventListener('click',()=>{
-  storedPlayerAudio.muted = true;
+window.onload = function(){
+  setTimeout(function(){
+    console.log("Hello");
+    playerAudioGame.play();
+}, 10000);
+};
+iconeSonGame.addEventListener('click',()=>{
+  playerAudioGame.muted = true;
 })
-iconeMute.addEventListener('click',()=>{
-  storedPlayerAudio.muted = false;
+iconeMuteGame.addEventListener('click',()=>{
+  playerAudioGame.muted = false;
 })
