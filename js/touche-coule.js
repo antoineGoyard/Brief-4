@@ -35,6 +35,7 @@ var videoOverR = document.getElementById("videoOverlayR");
 var overR = document.getElementById("overlayVideoR");
 var videoOverE = document.getElementById("videoOverlayE");
 var overE = document.getElementById("overlayVideoE");
+var loadAi = document.getElementById("overlayAi");
 
 function playVidR() 
 {
@@ -74,3 +75,13 @@ function playVidE()
 
 
 
+function load()
+{
+  loadAi.classList.add("overlayAi");
+  loadAi.classList.remove("hidden");
+ 
+  setTimeout(() => {
+    loadAi.classList.remove("overlayAi");
+    loadAi.classList.add("hidden");
+  }, 2000);
+}

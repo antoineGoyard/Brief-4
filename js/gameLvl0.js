@@ -56,6 +56,7 @@ function gameLvl0() {
 
 // AI TURN //
                 setTimeout(() => {
+                load();
                  if (people == 'republique') 
                 {
                     peupleChoix = 1;
