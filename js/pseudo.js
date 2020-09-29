@@ -1,17 +1,20 @@
 let btnLogin = document.getElementById('btnMenu');
 let score = document.getElementById('score');
-let pseudoPlayerOne = document.getElementById('pseudoInscription').value;
+let pseudoPlayerOne; //= document.getElementById('pseudoInscription').value;
+let pseudoPlayerTwo;
 
-function setUserPseudoPlayerOne() {
-  pseudoPlayerOne = localStorage.setItem('pseudo', pseudoPlayerOne);
-  console.log("test local");
-}
+
+// function setUserPseudoPlayerOne() {
+//   pseudoPlayerOne = localStorage.setItem('pseudoPlayerOne', storedPseudoPlayerOne);
+//   console.log("test local");
+// }
 
 btnLogin.addEventListener('click', () => {
   console.log("ok");
   validateForm();
-  setUserPseudoPlayerOne();
-  console.log("taratata");
+  pseudoPlayerOne = document.getElementById('pseudoInscription').value;
+  localStorage.setItem('pseudoPlayerOne', pseudoPlayerOne);
+  console.log(pseudoPlayerOne);
 
 });
 
@@ -29,35 +32,39 @@ function validateForm() {
     sectionScore.classList.add('hidden');
     sectionPseudo.classList.add('hidden');
     sectionMulti.classList.add('hidden');
-    
     document.getElementById('PlayerOneDuo').value = x;
     console.log('Click Btn Menu');
   }
 }
 
 btnJouerDuo.addEventListener('click', () => {
-  validateInput();
+  validateFormDuo();
   console.log('Click Btn Jouer Duo');
+  let pseudoPlayerTwo = document.getElementById('pseudoPlayerTwo').value;
+  localStorage.setItem('pseudoPlayerTwo', pseudoPlayerTwo);
+  console.log("adjugé");
 })
 
 
-function validateInput() {
+function validateFormDuo() {
   console.log("ca passe");
-  let pseudoPlayerTwo = document.forms["formDuo"]["pseudo2"].value;
-  
-  if (pseudoPlayerTwo == "") {
+  let y = document.forms["formDuo"]["pseudo"].value;
+  if (y == "") {
     alert("Veuillez indiquer un pseudo pour jouer!");
     return false;
   }
   else {
-    setUserPseudoPlayerTwo();
+    
     console.log(pseudoPlayerTwo);
+
+  console.log(pseudoPlayerTwo);
    window.location = "modeDuo.html";
 
 }}
 
-function setUserPseudoPlayerTwo() {
-  pseudoPlayerTwo = localStorage.setItem('pseudo', pseudoPlayerTwo);
+// function setUserPseudoPlayerTwo() {
   
-  console.log(pseudoPlayerTwo.pseudo);
-}
+//   pseudoPlayerTwo = document.getElementById('pseudoPlayerTwo').value;
+//   localStorage.setItem('pseudoPlayerTwo', pseudoPlayerTwo);
+//   console.log(pseudoPlayerTwo.pseudo);
+// }
