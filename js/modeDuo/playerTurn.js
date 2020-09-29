@@ -283,7 +283,10 @@ btn_btn1P2.addEventListener('click', () => {
     }
     // Si tous est bien placer , j'enleve les élements inutiles , j'affiche le nouveau tableau pour l'ia. 
     else {
-        document.getElementById('section_hidden_P2').classList.add('hidden');
+        //document.getElementById('section_hidden_P2').classList.add('hidden');
+        document.getElementById('placeP2').classList.add('hidden');
+        document.getElementById('placementexplication').classList.add('hidden');
+        document.getElementById('btn_btn1P2').classList.add('hidden');
         document.getElementById('title_player1').classList.remove('hidden');
         document.getElementById('btn_gamep12').classList.remove('hidden');
         document.getElementById('title1P1').classList.remove('hidden');
