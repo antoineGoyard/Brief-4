@@ -55,8 +55,10 @@ function gameLvl0() {
                 }
 
 // AI TURN //
-                setTimeout(() => {
                 load();
+                setTimeout(() => {
+                    
+               
                  if (people == 'republique') 
                 {
                     peupleChoix = 1;
@@ -89,8 +91,10 @@ function gameLvl0() {
                     //console.log('Victoire IA');
                     defeat();
                 }
-            }, 2000);
+            
                 //console.log(alreadyHitAi);
+            }, 4000);
+
             }
             else 
             {

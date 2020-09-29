@@ -35,12 +35,14 @@ var videoOverR = document.getElementById("videoOverlayR");
 var overR = document.getElementById("overlayVideoR");
 var videoOverE = document.getElementById("videoOverlayE");
 var overE = document.getElementById("overlayVideoE");
-var loadAi = document.getElementById("overlayAi");
+var loadAI = document.getElementById("overlayAi");
+var fake = document.getElementById("fakeDive");
 
 function playVidR() 
 {
     jouerGuerreSalsifi.classList.add("hidden");
     jouerGuerreSalsifi.classList.remove("title_game");
+
   videoOverR.classList.remove("hidden");
   videoOverR.classList.add("videoOverlayR");
   overR.classList.remove("hidden");
@@ -48,6 +50,7 @@ function playVidR()
   videoOverR.play();
   setTimeout(() => {
     jouerGuerreSalsifi.classList.remove("hidden");
+    jouerGuerreSalsifi.classList.add("title_game");
     jouerGuerreSalsifi.classList.add("title_game");
     videoOverR.classList.add("hidden");
     videoOverR.classList.remove("videoOverlayR");
@@ -58,7 +61,8 @@ function playVidR()
 
 function playVidE() 
 {
-    jouerGuerreSalsifi.classList.add("hidden");
+  jouerGuerreSalsifi.classList.add("hidden");
+  jouerGuerreSalsifi.classList.remove("title_game");
   videoOverE.classList.remove("hidden");
   videoOverE.classList.add("videoOverlayE");
   overE.classList.remove("hidden");
@@ -66,6 +70,7 @@ function playVidE()
   videoOverE.play();
   setTimeout(() => {
     jouerGuerreSalsifi.classList.remove("hidden");
+    jouerGuerreSalsifi.classList.add("title_game");
     videoOverE.classList.add("hidden");
     videoOverE.classList.remove("videoOverlayE");
     overE.classList.add("hidden");
@@ -77,11 +82,27 @@ function playVidE()
 
 function load()
 {
-  loadAi.classList.add("overlayAi");
-  loadAi.classList.remove("hidden");
  
-  setTimeout(() => {
-    loadAi.classList.remove("overlayAi");
-    loadAi.classList.add("hidden");
+
+  fake.classList.remove("hidden");
+  fake.classList.add("waitDude");
+  setTimeout(() =>
+   {
+    setTimeout(() => {
+      jouerGuerreSalsifi.classList.remove("hidden");
+      jouerGuerreSalsifi.classList.add("title_game");
+     
+      loadAI.classList.remove("overlayAi");
+      loadAI.classList.add("hidden");
+    }, 2000);
+    jouerGuerreSalsifi.classList.add("hidden");
+    jouerGuerreSalsifi.classList.remove("title_game");
+  
+    fake.classList.add("hidden");
+    fake.classList.remove("waitDude");
+    loadAI.classList.add("overlayAi");
+    loadAI.classList.remove("hidden");
+   
   }, 2000);
+
 }
