@@ -88,16 +88,9 @@ function load()
   setTimeout(() =>
    {
     setTimeout(() => {
-     
-      jouerGuerreSalsifi.classList.remove("hidden");
-  jouerGuerreSalsifi.classList.add("title_game");
       loadAI.classList.remove("overlayAi");
       loadAI.classList.add("hidden");
     }, 500);
-   
-
-    jouerGuerreSalsifi.classList.add("hidden");
-    jouerGuerreSalsifi.classList.remove("title_game");
     fake.classList.add("hidden");
     fake.classList.remove("fake");
     loadAI.classList.add("overlayAi");
