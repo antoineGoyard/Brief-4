@@ -29,7 +29,6 @@ function iKillYou()
         if (verifBoat(actionAi(alreadyHitAi), boatPlayer) == true) 
         {
             toucheRecupTab(boatPlayer, touch1Time, coup);
-            alert("touché");
             alreadyHitAi.push(coup);
             touchAi.push(coup);
             document.getElementById(coup).classList.add("hit");
