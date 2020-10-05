@@ -39,7 +39,7 @@ function gameLvl0() {
                         document.getElementById("cliquer" + hitPlayer).classList.add("hit");
                         document.getElementById("cliquer" + hitPlayer).classList.remove("carreExplosion");
 
-                    }, 2000);
+                    }, 1500);
                     verifCoule(boatAi,verif); 
                     //console.log(verif);
                     //console.log(boatAi);
@@ -78,7 +78,7 @@ function gameLvl0() {
                     setTimeout(() => {
                         document.getElementById(coup).classList.add("hit");
                         document.getElementById(coup).classList.remove("carreExplosion");
-                    }, 2000);
+                    }, 1500);
                   
                 } else 
                 {
@@ -93,7 +93,7 @@ function gameLvl0() {
                 }
             
                 //console.log(alreadyHitAi);
-            }, 4000);
+            }, 1500);
 
             }
             else 

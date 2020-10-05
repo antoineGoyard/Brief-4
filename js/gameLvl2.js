@@ -37,7 +37,7 @@ function gameLvl2() {
                         document.getElementById("cliquer" + hitPlayer).classList.add("hit");
                         document.getElementById("cliquer" + hitPlayer).classList.remove("carreExplosion");
 
-                    }, 2000);
+                    }, 1500);
                     verifCoule(boatAi,verif); 
                   
                 } else 
@@ -86,7 +86,7 @@ function gameLvl2() {
                 console.log('Victoire IA');
                 defeat()
             }
-        }, 4000);
+        }, 1500);
         }
         else {
             alert('Vous avez déjà tiré a cet endroit !')

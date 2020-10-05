@@ -93,7 +93,7 @@ function load()
   jouerGuerreSalsifi.classList.add("title_game");
       loadAI.classList.remove("overlayAi");
       loadAI.classList.add("hidden");
-    }, 2000);
+    }, 500);
    
 
     jouerGuerreSalsifi.classList.add("hidden");
@@ -103,6 +103,6 @@ function load()
     loadAI.classList.add("overlayAi");
     loadAI.classList.remove("hidden");
    
-  }, 2000);
+  }, 1000);
 
 }
