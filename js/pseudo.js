@@ -51,17 +51,36 @@ function validateForm() {
   }
 }
 
-btnJouerDuo.addEventListener('click', () => {
-  
-  console.log('Click Btn Jouer Duo');
+document.getElementById('btnJouerDuo').addEventListener('click', () => {
   let pseudoPlayerTwo = document.getElementById('pseudoPlayerTwo').value;
   localStorage.setItem('pseudoPlayerTwo', pseudoPlayerTwo);
+  let pseudoPlayerOneDUO = document.getElementById('PlayerOneDuo').value;
+  localStorage.setItem('pseudoPlayerOne', pseudoPlayerOneDUO);
+  console.log(pseudoPlayerOneDUO);
+  console.log(pseudoPlayerTwo);
+  //alert('choup');
+  if (pseudoPlayerTwo == pseudoPlayerOneDUO) {
+    alert("Veuillez indiquer un  pseudo différent!");
+  }
+  else if (pseudoPlayerOneDUO == "") {
+    alert("Player 1 veuillez indiquer un pseudo valide pour jouer!")
+  }
+  else if (pseudoPlayerTwo == "") {
+    alert("Player 2 veuillez indiquer un pseudo valide pour jouer!")
+  }
+  else {
+    window.location = "modeDuo.html";
+  }
+
+  console.log('Click Btn Jouer Duo');
+
   console.log("adjugé");
-  validateFormDuo();
+ 
+  //verifPseudoDuo(pseudoPlayerOne, pseudoPlayerTwo);
 })
 
 
-function validateFormDuo() {
+/*function validateFormDuo() {
   console.log("ca passe");
   let y = document.forms["formDuo"]["pseudo2"].value;
   if (y == "") {
@@ -74,9 +93,24 @@ function validateFormDuo() {
    }
   else {
 
-    console.log(pseudoPlayerTwo);
-    console.log(pseudoPlayerTwo);
-    window.location = "modeDuo.html";
+    
 
   }
+}*/
+
+function verifPseudoDuo(pseudoP1, pseudoP2) {
+  if (pseudoP1.value === pseudoP2.value) {
+    alert("Veuillez indiquer un  pseudo différent!");
+  }
+  else if (pseudoP1.value == "") {
+    alert("Player 1 veuillez indiquer un pseudo valide pour jouer!")
+  }
+  else if (pseudoP2.value == "") {
+    alert("Player 2 veuillez indiquer un pseudo valide pour jouer!")
+  }
+  else {
+    alert('sa devais être bon')
+    window.location = "modeDuo.html";
+  }
+
 }

@@ -121,7 +121,3 @@ btnMultiReturnMenu.addEventListener('click',()=>{
     sectionMulti.classList.add('hidden');
     console.log('Click Btn retour menu');
 })
- //boutons redirections
- btnJouerDuo.addEventListener('click',()=>{
-    window.location = "modeDuo.html";
-})
