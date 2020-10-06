@@ -4,6 +4,7 @@ html{
 body {
     font-family: 'Press Start 2P', cursive;
     overflow: hidden;
+    background-color: #000000;
 }
 button{
     width: 20%;  
@@ -19,6 +20,12 @@ button{
 }
 h1 {
     color: #FFFFFF;
+}
+
+#player
+{
+    width: auto;
+    height: 100%;
 }
 #modale {
     background-color: rgba(27, 26, 26, 0.521);

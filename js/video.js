@@ -11,7 +11,7 @@ soundOn.addEventListener('click',()=>{
     setTimeout(function(){
     console.log("Hello");
     btnSkip.click();
-}, 12000);
+}, 30000);
 
 });
 
@@ -23,7 +23,7 @@ soundOff.addEventListener('click',()=>{
     setTimeout(function(){
         console.log("Hello");
         btnSkip.click();
-    }, 12000);
+    }, 30000);
 });
 
 
