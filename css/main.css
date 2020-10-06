@@ -322,20 +322,23 @@ form {
     }
     .btnBtnBar
     {
+        padding: 2% 0;
         width:30%;
     }
     .containerMenu
     {
-        width: 80%;
+        width: 60%;
+        height: 80% ;
     }
     .containerSolo
     {
-        width: 80%;
+        padding-top: 5%;
+        width: 60%;
        margin-top: 10vh;
     }
     input
     {
-        height: 5vh !important ;
+        height: 7vh !important ;
         font-size: 1rem;
     }
     .return
@@ -351,4 +354,42 @@ form {
         flex-direction: column;
         justify-content: space-between;
     }
+    .gradient-border::after
+    {
+        display: none;
+    }
+
+    form
+    {
+        margin-top: 5%;
+        margin-bottom: 4%;
+      height: 50%;
+    }
+    #btnJouerSolo
+    {
+        padding: 2% 0;
+    }
+
+    .menuDuoColumn
+    {
+        height: 100%;
+    }
+    .containerDuo
+    {
+        height: 90%;
+    }
+    .formDuo
+    {
+        padding-top: 5%;
+        height: 60%;
+    }
+
+    .sectionScore
+    {
+        padding-top: 5%;
+    }
+   #boby
+   {
+    padding-top: 0%!important ;
+   }
 }
