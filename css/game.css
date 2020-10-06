@@ -117,14 +117,14 @@ table
   position: absolute;
   margin: auto;
   bottom: 2%;
-  left: 4%;
+  left: 13.5%;
 }
 #btn_btn2
 {
     position: absolute;
     margin: auto;
     bottom: 2%;
-    right: 4%;
+    right: 17%;
 }
 /* Les Titres */
 .title_game {
@@ -311,7 +311,7 @@ video
 }
 #bateauplacer
 {
-   
+   margin-top: 6%;
     height: 31vh;
 }
 #letableau.changementplace
@@ -495,3 +495,22 @@ video
     margin-bottom: 3vh;
 }
 
+@media screen and (max-width: 900px) 
+{
+        #btn_btn1
+    {
+    font-size: 0.8rem;
+    position: absolute;
+    margin: auto;
+    bottom: 2%;
+    left: 4%;
+    }
+        #btn_btn2
+    {
+        font-size: 0.8rem;
+        position: absolute;
+        margin: auto;
+        bottom: 2%;
+        right: 4%;
+    }
+}
