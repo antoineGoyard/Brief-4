@@ -26,7 +26,10 @@ body
 }
 /* Class hit & Miss */
 .hit{
-    background-color: red;
+    background-image: url(../img/smoke.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
 }
 .miss
 {
@@ -460,6 +463,8 @@ video
     background-image: url(../img/explosion.gif);
     background-repeat: no-repeat;
     background-position: center;
+    background-size:cover;
+
 }
 
 .fake
