@@ -114,12 +114,17 @@ table
 }
 #btn_btn1
 {
-    margin-top: 45vw;
+  position: absolute;
+  margin: auto;
+  bottom: 2%;
+  left: 4%;
 }
 #btn_btn2
 {
-    
-    margin-top: 7vh;
+    position: absolute;
+    margin: auto;
+    bottom: 2%;
+    right: 4%;
 }
 /* Les Titres */
 .title_game {
@@ -489,3 +494,4 @@ video
     color: white;
     margin-bottom: 3vh;
 }
+
