@@ -34,11 +34,7 @@ bouton_board_yes.addEventListener('click', () => {
     console.log(affichageBoardGame);
 })
 
-bouton_board_no.addEventListener('click', () => {
-    document.getElementById('section_go').classList.add('hidden');
-    affichageBoardGame = 2;
-    document.getElementById('title_player1').classList.remove('hidden');
-})
+
 
 btnGoP1.addEventListener('click', () => {
     document.getElementById('title_player1').classList.add('hidden');
