@@ -1,6 +1,16 @@
+function testtableau() {
+  for (let i = 0; i < boatAi.length; i++) {
+      tabCouleAItest.push(boatAi[i]);
+  }
+}
+
+
+
+
 function verifCoule(tab,x) 
 {
     let tampon;
+   
     for (let i = 0; i < tab.length; i++)
     {
        for (let j = 0; j < tab[i].length; j++) 
@@ -12,7 +22,7 @@ function verifCoule(tab,x)
            }
        }
     }
-
+ 
         for ( j = 0; j < tab[tampon].length; j++) 
         {
             if(tab[tampon][j] != null)
@@ -20,6 +30,43 @@ function verifCoule(tab,x)
                return;
             }
         }
+        console.log(bateau22);
+        console.log(bateau11);
+        console.log(bateau33);
+        console.log(bateau44);
+        console.log(bateau55);
+    switch (tampon) {
+      case 0:
+        for (let index = 0; index < bateau11.length; index++) {
+          document.getElementById("cliquer" + bateau11[index]).classList.remove("hit");
+          document.getElementById("cliquer" + bateau11[index]).classList.add("smoke");
+        }
+        break;
+      case 1:
+        for (let index = 0; index < bateau22.length; index++) {
+          document.getElementById("cliquer" + bateau22[index]).classList.remove("hit");
+          document.getElementById("cliquer" + bateau22[index]).classList.add("smoke");
+        }
+        break;
+      case 2:
+        for (let index = 0; index < bateau33.length; index++) {
+          document.getElementById("cliquer" + bateau33[index]).classList.remove("hit");
+          document.getElementById("cliquer" + bateau33[index]).classList.add("smoke");
+        }
+        break;
+      case 3:
+        for (let index = 0; index < bateau44.length; index++) {
+          document.getElementById("cliquer" + bateau44[index]).classList.remove("hit");
+          document.getElementById("cliquer" + bateau44[index]).classList.add("smoke");
+        }
+        break;
+      case 4:
+        for (let index = 0; index < bateau55.length; index++) {
+          document.getElementById("cliquer" + bateau55[index]).classList.remove("hit");
+          document.getElementById("cliquer" + bateau55[index]).classList.add("smoke");
+        }
+        break;
+    }
     tab[tampon] = [];
     if (peupleChoix == 0)
     {

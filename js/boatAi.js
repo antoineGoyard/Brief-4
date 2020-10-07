@@ -223,7 +223,45 @@ for (let i = 0; i < bateau1.length; i++) {
         }
     }
 }
+var bateau11=[];
+var bateau22 = [];
 
+var bateau33 = [];
+
+var bateau44 = [];
+
+var bateau55 = [];
+for (let index = 0; index < bateau1.length; index++) {
+    bateau11[index] = bateau1[index];
+   bateau11[index]+= 3000;
+}
+for (let index = 0; index < bateau2.length; index++) {
+    bateau22[index] = bateau2[index];
+    bateau22[index]+= 3000;
+    
+}
+for (let index = 0; index < bateau3.length; index++) {
+    bateau33[index] = bateau3[index];
+   bateau33[index]+= 3000;
+    
+}
+for (let index = 0; index < bateau4.length; index++) {
+    bateau44[index] = bateau4[index];
+   bateau44[index]+= 3000;
+    
+}
+for (let index = 0; index < bateau5.length; index++) {
+    bateau55[index] = bateau5[index];
+   bateau55[index]+= 3000;
+    
+}
+
+
+    console.log(bateau2);
+    console.log(bateau11);
+    console.log(bateau33);
+    console.log(bateau44);
+    console.log(bateau55);
 
 boatAi = [bateau1, bateau2, bateau3, bateau4, bateau5];
 console.log(boatAi);

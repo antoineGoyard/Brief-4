@@ -1,3 +1,5 @@
+
+
 function gameLvl0() {
     score = 0;
     bonus = 1;
@@ -7,7 +9,6 @@ function gameLvl0() {
         
 
 // PLAYER TURN //
-
             //console.log(event.target.id);
             if (event.target.id < 4000) 
             { 

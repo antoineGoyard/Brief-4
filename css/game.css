@@ -26,11 +26,19 @@ body
 }
 /* Class hit & Miss */
 .hit{
+    background-image: url(../img/touch.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.smoke
+{
     background-image: url(../img/smoke.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
 }
+
 .miss
 {
     background-color: blue;
