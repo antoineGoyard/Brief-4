@@ -393,3 +393,51 @@ form {
     padding-top: 0%!important ;
    }
 }
+
+@media screen and (max-width : 600px)
+{ 
+    #responsive
+    {
+        width: 100vw;
+        height: 100vh;
+        background-color: #3C383858;
+        display: block;
+        padding-top: 15%;
+    }
+    #sectionOptions 
+    {
+        display: none;
+    }
+    #title_game_player
+    {
+        display: none;
+    }
+    #sectionScore
+    {
+        display: none;
+    }
+    #sectionVictoireDuo
+    {
+        display: none;
+    }
+    #ectionMulti
+    {
+        display: none;
+    }
+    #sectionMenuDuo
+    {
+        display: none;
+    }
+    #sectionMenuSolo
+    {
+        display: none;
+    }
+    #sectionMenu
+    {
+        display: none;
+    }
+    #sectionInscription
+    {
+        display: none;
+    }
+}
