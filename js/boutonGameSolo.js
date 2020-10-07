@@ -4,6 +4,7 @@ let pseudoPlayerOne = localStorage.getItem("pseudoPlayerOne");
 let videoExplication = document.getElementById('video');
 let sonExplication = document.getElementById('playExplication');
 let muteExplication = document.getElementById('mutedExplication');
+let audioGame = document.getElementById('audioGame');
 
 btnMenuVictoireSolo.addEventListener('click',()=>{
     window.location= "page2.html";
@@ -12,6 +13,8 @@ btnMenuVictoireSolo.addEventListener('click',()=>{
 
 btnValidation.addEventListener('click',()=>{
     console.log(pseudoPlayerOne);
+    audioGame.play();
+    videoExplication.muted="true";
     
 })
 sonExplication.addEventListener('click',()=>{
