@@ -9,10 +9,10 @@ var boatPlayer2 = new Array;
 
 
 
-    let PseudoPlayerOne = localStorage.getItem('pseudoPlayerOne');
-    console.log(PseudoPlayerOne);
-    let PseudoPlayerTwo = localStorage.getItem('pseudoPlayerTwo');
-    console.log(PseudoPlayerTwo);
+let PseudoPlayerOne = localStorage.getItem('pseudoPlayerOne');
+console.log(PseudoPlayerOne);
+let PseudoPlayerTwo = localStorage.getItem('pseudoPlayerTwo');
+console.log(PseudoPlayerTwo);
 
 var player1 = PseudoPlayerOne;
 var player2 = PseudoPlayerTwo;
@@ -364,7 +364,7 @@ document.getElementById('boardP1').addEventListener('click', (event) => {
         if (touchPlayer.length == 17) {
 
             console.log('Victoire Player');
-            
+
             var playerwinner = player1;
             document.getElementById('winner').append(playerwinner);
 
@@ -377,7 +377,7 @@ document.getElementById('boardP1').addEventListener('click', (event) => {
             document.getElementById('title_player2').classList.remove('hidden');
             document.getElementById('playP1').classList.add('hidden');
             document.getElementById('btn_gamep12').classList.remove('hidden');
-            
+
             console.log('tt');
         }, 200);
     }
@@ -411,7 +411,7 @@ document.getElementById('boardP2').addEventListener('click', (event) => {
         if (touchPlayer.length == 17) {
 
             console.log('Victoire Player2');
-             let playerwinner = player2
+            let playerwinner = player2
             document.getElementById('winner').append(playerwinner);
             document.getElementById('playP2').classList.add('hidden');
             document.getElementById('sectionVictoireDuo').classList.remove('hidden');
@@ -430,15 +430,13 @@ document.getElementById('boardP2').addEventListener('click', (event) => {
 
 })
 
-document.getElementById('btn_btn2P2').addEventListener('click', () =>
-{
+document.getElementById('btn_btn2P2').addEventListener('click', () => {
     document.getElementById("playP2").classList.remove('hidden');
     document.getElementById('title_player2').classList.add('hidden');
     document.getElementById('section_hidden_P2').classList.add('hidden');
 })
 
-document.getElementById('btn_gamep12').addEventListener('click', () =>
-{
+document.getElementById('btn_gamep12').addEventListener('click', () => {
     document.getElementById("playP1").classList.remove('hidden');
     document.getElementById('title_player1').classList.add('hidden');
     document.getElementById('section_hidden_P2').classList.add('hidden');
