@@ -113,9 +113,9 @@ form {
     color: #FFFFFF;
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
-    font-size: 0.7rem;
-    margin-top: 1%;
-    margin-left: 1%;;
+        position: absolute;
+        top: 1%;
+        right: 1%;
 }
 /*--------------------------------------------inscription----------------------------------------*/
 /*-----------------------------------------------------------------------------------------------*/
