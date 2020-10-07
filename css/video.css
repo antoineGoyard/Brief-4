@@ -78,3 +78,20 @@ video{
         height: 30vh;
     }
 }
+
+@media screen and (max-width : 600px)
+{ 
+    #responsive
+    {
+        width: 100vw;
+        height: 100vh;
+        background-color: #3C383858;
+        display: block;
+        padding-top: 15%;
+        color: white;
+    }
+    #video
+    {
+        display: none;
+    }
+}
