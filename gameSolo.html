@@ -7,17 +7,17 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/0b93042111.js" crossorigin="anonymous"></script>
-  
+  <link rel="icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/game.css">
   <link rel="stylesheet" href="css/responsiveGame.css">
 </head>
 
 <body>
-<!-- <audio id="audioGame" src="audio/epic-8-bit-boss-battle-music.mp3" play></audio> -->
-<button class="hidden" id="play">
+<audio id="audioGame" src="audio/epic-8-bit-boss-battle-music.mp3" play></audio>
+<button class="sound" id="playExplication">
     <i class="fas fa-volume-up"></i>
 </button>
-<button class="sound" id="muted"><i class="fas fa-volume-mute"></i></button>
+<button class="hidden"  id="mutedExplication"><i class="fas fa-volume-mute"></i></button>
   <!-- Titre des différentes phases de jeux -->
   <div id="title_game_player" class="title_game"> Placement de vos Bateaux</div>
   <div id="title_game" class="title_game hidden"> A vous de Jouer</div>
@@ -49,7 +49,7 @@
     <div id="placementexplication">
 
       <div id="explicationGame" class="explication">
-        <video id="video" controls>
+        <video id="video" autoplay controls>
           <source src="img/explicationrepublique.mp4" type="video/mp4">
           <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
           </p>
