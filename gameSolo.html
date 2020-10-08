@@ -14,10 +14,6 @@
 
 <body>
 <audio id="audioGame" src="audio/epic-8-bit-boss-battle-music.mp3" ></audio>
-<button class="sound" id="playExplication">
-    <i class="fas fa-volume-up"></i>
-</button>
-<button class="hidden"  id="mutedExplication"><i class="fas fa-volume-mute"></i></button>
   <!-- Titre des différentes phases de jeux -->
   <div id="title_game_player" class="title_game"> Placement de vos Bateaux</div>
   <div id="title_game" class="title_game hidden"> A vous de Jouer</div>
@@ -26,7 +22,10 @@
   
   <!-- -->
   <section id="section_game">
-
+    <div id="gestionMusique" class=hidden><button class="sound" id="playExplication">
+      <i class="fas fa-volume-up"></i>
+  </button>
+  <button class="hidden"  id="mutedExplication"><i class="fas fa-volume-mute"></i></button></div>
     <div id="nomovegame" class="hidden"></div>
     <!-- Placement des grilles -->
     <div class="placementGame" id="placementGeneral">
