@@ -7,6 +7,7 @@ let muteExplication = document.getElementById('mutedExplication');
 let audioGame = document.getElementById('audioGame');
 let gestionMusique = document.getElementById('gestionMusique');
 
+
 btnMenuVictoireSolo.addEventListener('click',()=>{
     window.location= "page2.html";
     

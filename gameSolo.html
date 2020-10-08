@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<audio id="audioGame" src="audio/epic-8-bit-boss-battle-music.mp3" ></audio>
+<audio id="audioGame" src="audio/epic-8-bit-boss-battle-music.mp3"loop=true></audio>
   <!-- Titre des différentes phases de jeux -->
   <div id="title_game_player" class="title_game"> Placement de vos Bateaux</div>
   <div id="title_game" class="title_game hidden"> A vous de Jouer</div>
@@ -116,7 +116,7 @@
   <section id="sectionGameOver" class="hidden">
     <h1>Game Over</h1>
     <div class="btnBar">
-      <button class="btnBtnBar">Menu</button>
+      <button id="btnMenuVictoireSolo" class="btnBtnBar">Menu</button>
       <button class="btnBtnBar" onclick='window.location.reload(false)' value="Rafraichir" >Rejouer</button>
     </div>
   </section>
