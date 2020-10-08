@@ -1,4 +1,4 @@
-let btnMenuVictoireSolo = document.getElementById('btnMenuVictoireSolo');
+let btnRtrMenuVivtoire = document.getElementById('btnMenuVictoireSolo');
 let btnValidation = document.getElementById('btn_btn1');
 let pseudoPlayerOne = localStorage.getItem("pseudoPlayerOne");
 let videoExplication = document.getElementById('video');
@@ -8,10 +8,9 @@ let audioGame = document.getElementById('audioGame');
 let gestionMusique = document.getElementById('gestionMusique');
 
 
-btnMenuVictoireSolo.addEventListener('click',()=>{
-    window.location= "page2.html";
-    
-})
+// btnRtrMenuVivtoire.addEventListener('click',()=>{
+//     window.location.assign("https://celinegaly-informatique.fr/Brief-4/page2.html");
+// });
 
 btnValidation.addEventListener('click',()=>{
     console.log(pseudoPlayerOne);
