@@ -41,7 +41,7 @@ body
 
 .miss
 {
-    background-color: blue;
+    background-color: rgba(0, 52, 76, 0.877);
 }
 /* Placement Général*/
 #section_game
