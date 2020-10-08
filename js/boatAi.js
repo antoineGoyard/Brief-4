@@ -257,7 +257,7 @@ for (let index = 0; index < bateau5.length; index++) {
 }
 
 
-    console.log(bateau2);
+    console.log(bateau22);
     console.log(bateau11);
     console.log(bateau33);
     console.log(bateau44);
