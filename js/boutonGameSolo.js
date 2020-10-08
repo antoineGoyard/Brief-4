@@ -24,7 +24,7 @@ sonExplication.addEventListener('click',()=>{
     sonExplication.classList.add('hidden');
     muteExplication.classList.remove('hidden');
     muteExplication.classList.add('sound');
-    audioGame.muted="false";
+    audioGame.muted=true;
    
 })
 muteExplication.addEventListener('click',()=>{
@@ -32,5 +32,5 @@ muteExplication.addEventListener('click',()=>{
     muteExplication.classList.add('hidden');
     sonExplication.classList.remove('hidden');
     sonExplication.classList.add('sound');
-    audioGame.muted="true";
+    audioGame.muted=false;
 })
