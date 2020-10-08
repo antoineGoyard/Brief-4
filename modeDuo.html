@@ -7,6 +7,7 @@
   <link rel="icon" href="img/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+  <script type="text/javascript" src="https://kit.fontawesome.com/0b93042111.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,6 +16,7 @@
     <button id="visual_board" class="fullbtn">Ok</button>
   </section>
   <!-- -->
+  <audio id="audioGame2" src="audio/epic-8-bit-boss-battle-music.mp3"loop=true></audio>
   <section id="title_player1" class="hidden">
 
     <div class="title hidden" id="title1P1"> <span class="namePlayer1" id="namePlayer1"></span> à toi de jouer !</div>
@@ -57,6 +59,7 @@
               <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
               </p>
             </video>
+            
           </div>
 
           <div id="bateauplacer" class="passagevertical">
@@ -159,7 +162,12 @@
 
     </section>
   </section>
-
+  <div class="hidden" id="gestionMusiqueDuo">
+    <button class="sound" id="playMusicGameDuo">
+    <i class="fas fa-volume-up"></i>
+</button>
+<button class="hidden"  id="mutedMusicGameDuo"><i class="fas fa-volume-mute"></i></button>
+</div>
   <section id="playP1" class="hidden">
     <div class="title_game">C'est <span class="namePlayer1"></span> qui joue !</div>
     <div id="board_for_gameP1" class="sansvisuel"></div>
