@@ -30,7 +30,7 @@ function gameLvl2() {
                 {
                   
                     bonus +=1;
-                    score += (200*bonus);
+                    score += (500*bonus);
                     touchPlayer.push(hitPlayer);
                     document.getElementById("cliquer" + hitPlayer).classList.add("carreExplosion");
                     setTimeout(() => {

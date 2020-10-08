@@ -29,7 +29,7 @@ function gameLvl1() {
                 if (verifBoat(verif, boatAi) == true) 
                 {
                     bonus +=1;
-                    score += (150*bonus);
+                    score += (250*bonus);
                     touchPlayer.push(hitPlayer);
                     document.getElementById("cliquer" + hitPlayer).classList.add("carreExplosion");
                     setTimeout(() => {
