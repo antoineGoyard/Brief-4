@@ -14,7 +14,7 @@ PHP
 
 Server:
 LWS
-https://www.celinegaly-informatique.fr/Brief-4
+https://celinegaly-informatique.fr/Pass'War/
 
 Prerequisite:
 the use of our games requires at least a local server in order to have the scores recorded
